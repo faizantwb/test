@@ -399,7 +399,6 @@
 - no
 - that would be all thanks
 - that would be all
-- no thanks
 - that is all thank you
 - that's all for today
 
@@ -422,6 +421,7 @@
 - good afternoon
 - good morning
 - Hi
+- hola
 
 ## intent:out_of_scope
 - Who is better Ronaldo or Messi?
