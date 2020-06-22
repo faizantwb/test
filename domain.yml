@@ -1,396 +1,913 @@
 intents:
-- covid_myth_cure
-- covid_myth_antibiotics
-- covid_myth_garlic
-- covid_myth_saline_rinse
-- covid_myth_other_vaccines
-- covid_myth_alcohol_chlorine
-- covid_myth_thermal_scanners
-- covid_myth_UV
-- covid_myth_hand_dryers
-- covid_myth_hot_bath
-- covid_myth_pets
-- covid_myth_mosquitos
-- covid_myth_heat_kills
-- covid_myth_cold_kills
-- covid_myth_only_old
-- covid_children_stress
-- covid_stress
-- covid_donate
-- covid_travel_advice
-- covid_myths_summary
-- covid_donts
-- covid_on_surfaces
-- covid_infection_sources
-- covid_incubation
-- covid_masks
-- covid_SARS
-- covid_treatments
-- covid_most_at_risk
-- covid_anxiety
-- covid_infection_likelihood
-- covid_protection
-- covid_how_spread
-- covid_what_is_corona_covid-19
-- covid_symptoms
-- wash_hands_how
-- wash_hands_frequency
-- fallback
-- goodbye
-- greet
-- affirm
-- deny
-- out_of_scope
-- get_contact_details
-- get_feedback
-- ask_for_stats
-- ask_four_language_questions
-- covid_explain_pandemic
-- ask_again
-- name_entry
+
+- affirm_fr
+- answer_is_wrong_fr
+- ask_for_local_stats_fr
+- ask_for_stats_fr
+- ask_language_questions_fr
+- covid_anxiety_fr
+- covid_call_a_doctor_fr
+- covid_children_stress_fr
+- covid_disinfect_fr
+- covid_donts_fr
+- covid_explain_pandemic_fr
+- covid_gloves_fr
+- covid_hospital_fr
+- covid_how_spread_fr
+- covid_incubation_fr
+- covid_infection_likelihood_fr
+- covid_infection_sources_fr
+- covid_isolate_fr
+- covid_masks_availability_fr
+- covid_masks_care_fr
+- covid_masks_effectiveness_fr
+- covid_masks_how_to_fr
+- covid_myth_alcohol_chlorine_fr
+- covid_myth_antibiotics_fr
+- covid_myth_cold_kills_fr
+- covid_myth_drink_fr
+- covid_myth_drink_alcohol_fr
+- covid_myth_flies_fr
+- covid_myth_fruits_fr
+- covid_myth_garlic_fr
+- covid_myth_hand_dryers_fr
+- covid_myth_heat_kills_fr
+- covid_myth_hold_breath_fr
+- covid_myth_hot_bath_fr
+- covid_myth_mosquitos_fr
+- covid_myth_only_old_fr
+- covid_myth_other_vaccines_fr
+- covid_myth_phone_signals_fr
+- covid_myth_saline_rinse_fr
+- covid_myth_spices_fr
+- covid_myth_steam_fr
+- covid_myth_thermal_scanners_fr
+- covid_myth_traditional_medicine_fr
+- covid_myth_UV_fr
+- covid_myths_summary_fr
+- covid_on_surfaces_fr
+- covid_protection_fr
+- covid_protection_wash_hands_fr
+- covid_protection_keep_distance_fr
+- covid_protection_cover_mouth_nose_fr
+- covid_protection_stay_at_home_fr
+- covid_risk_for_children_fr
+- covid_risk_for_old_people_fr
+- covid_risk_with_preexisting_fr
+- covid_risk_most_at_risk_fr
+- covid_SARS_fr
+- covid_stay_at_home_fr
+- covid_stress_fr
+- covid_symptoms_fr
+- covid_travel_advice_fr
+- covid_treatments_fr
+- covid_wash_hands_frequency_fr
+- covid_wash_hands_how_fr
+- covid_what_is_corona_covid-19_fr
+- covid_why_distancing_fr
+- deny_fr
+- goodbye_fr
+- greet_fr
+- out_of_scope_fr
+- request_for_french_fr
+- share_with_your_friends_fr
+- user_says_thanks_fr
+- want_to_give_feedback_fr
+- whats_your_name_fr
+- where_do_you_live_fr
+- covid_myth_hot_tea_fr
+- affirm_sw
+- answer_is_wrong_sw
+- ask_for_local_stats_sw
+- ask_for_stats_sw
+- ask_language_questions_sw
+- covid_anxiety_sw
+- covid_call_a_doctor_sw
+- covid_children_stress_sw
+- covid_disinfect_sw
+- covid_donts_sw
+- covid_explain_pandemic_sw
+- covid_gloves_sw
+- covid_hospital_sw
+- covid_how_spread_sw
+- covid_incubation_sw
+- covid_infection_likelihood_sw
+- covid_infection_sources_sw
+- covid_isolate_sw
+- covid_masks_availability_sw
+- covid_masks_care_sw
+- covid_masks_effectiveness_sw
+- covid_masks_how_to_sw
+- covid_myth_alcohol_chlorine_sw
+- covid_myth_antibiotics_sw
+- covid_myth_cold_kills_sw
+- covid_myth_drink_sw
+- covid_myth_drink_alcohol_sw
+- covid_myth_flies_sw
+- covid_myth_fruits_sw
+- covid_myth_garlic_sw
+- covid_myth_hand_dryers_sw
+- covid_myth_heat_kills_sw
+- covid_myth_hold_breath_sw
+- covid_myth_hot_bath_sw
+- covid_myth_mosquitos_sw
+- covid_myth_only_old_sw
+- covid_myth_other_vaccines_sw
+- covid_myth_phone_signals_sw
+- covid_myth_saline_rinse_sw
+- covid_myth_spices_sw
+- covid_myth_steam_sw
+- covid_myth_thermal_scanners_sw
+- covid_myth_traditional_medicine_sw
+- covid_myth_UV_sw
+- covid_myths_summary_sw
+- covid_on_surfaces_sw
+- covid_protection_sw
+- covid_protection_wash_hands_sw
+- covid_protection_keep_distance_sw
+- covid_protection_cover_mouth_nose_sw
+- covid_protection_stay_at_home_sw
+- covid_risk_for_children_sw
+- covid_risk_for_old_people_sw
+- covid_risk_with_preexisting_sw
+- covid_risk_most_at_risk_sw
+- covid_SARS_sw
+- covid_stay_at_home_sw
+- covid_stress_sw
+- covid_symptoms_sw
+- covid_travel_advice_sw
+- covid_treatments_sw
+- covid_wash_hands_frequency_sw
+- covid_wash_hands_how_sw
+- covid_what_is_corona_covid-19_sw
+- covid_why_distancing_sw
+- deny_sw
+- goodbye_sw
+- greet_sw
+- out_of_scope_sw
+- request_for_french_sw
+- share_with_your_friends_sw
+- user_says_thanks_sw
+- want_to_give_feedback_sw
+- whats_your_name_sw
+- where_do_you_live_sw
+- covid_myth_hot_tea_sw
 
 forms:
-  - first_time_form
-  - contact_details_form
-  - feedback_form
-  - language_questions_form
-  - myth_source_form
+  - form_first_time_fr
+  - form_contact_details_fr
+  - form_feedback_fr
+  - form_language_questions_fr
+  - form_myth_source_fr
+  - form_first_time_sw
+  - form_contact_details_sw
+  - form_feedback_sw
+  - form_language_questions_sw
+  - form_myth_source_sw
 
 actions:
-  - action_get_infection_stats
-  - action_get_contact_details
-  - action_get_feedback
-  - action_get_language_questions
-  - action_link_to_pandemic_video
-  - utter_thats_fine
-
-entities:
-  - entity_given_name
+  - action_get_infection_stats_fr
+  - action_get_contact_details_fr
+  - action_get_feedback_fr
+  - action_get_language_questions_fr
+  - action_link_to_pandemic_video_fr
+  - action_ask_anything_else_fr
+  - action_get_infection_stats_sw
+  - action_get_contact_details_sw
+  - action_get_feedback_sw
+  - action_get_language_questions_sw
+  - action_link_to_pandemic_video_sw
+  - action_ask_anything_else_sw
 
 slots:
-  first_time:
+  first_time_fr:
     type: unfeaturized
-  given_name:
+  given_name_fr:
     type: unfeaturized
-  location:
+  location_fr:
     type: unfeaturized
-  myth_source:
+  myth_source_fr:
     type: unfeaturized
-  willing_to_do_language_survey:
+  willing_to_do_language_survey_fr:
     type: unfeaturized
-  language_at_home:
+  language_at_home_fr:
     type: unfeaturized
-  language_for_written_comms:
+  language_for_written_comms_fr:
     type: unfeaturized
-  language_for_verbal_comms:
+  language_for_verbal_comms_fr:
     type: unfeaturized
-  preferred_channel:
+  preferred_channel_fr:
     type: unfeaturized
-  feedback:
+  feedback_fr:
     type: unfeaturized
-  feedback_reason:
+  feedback_reason_fr:
     type: unfeaturized
-  requested_slot:
+  requested_slot_fr:
     type: unfeaturized
-  country:
+  country_fr:
     type: text
-  container:
+  container_fr:
     type: text
-  issue_type:
+  issue_type_fr:
     type: unfeaturized
-  issue_detail:
+  issue_detail_fr:
     type: unfeaturized
-  name:
+  name_fr:
+    type: unfeaturized
+  first_time_sw:
+    type: unfeaturized
+  given_name_sw:
+    type: unfeaturized
+  location_sw:
+    type: unfeaturized
+  myth_source_sw:
+    type: unfeaturized
+  willing_to_do_language_survey_sw:
+    type: unfeaturized
+  language_at_home_sw:
+    type: unfeaturized
+  language_for_written_comms_sw:
+    type: unfeaturized
+  language_for_verbal_comms_sw:
+    type: unfeaturized
+  preferred_channel_sw:
+    type: unfeaturized
+  feedback_sw:
+    type: unfeaturized
+  feedback_reason_sw:
+    type: unfeaturized
+  requested_slot_sw:
+    type: unfeaturized
+  country_sw:
+    type: text
+  container_sw:
+    type: text
+  issue_type_sw:
+    type: unfeaturized
+  issue_detail_sw:
+    type: unfeaturized
+  name_sw:
     type: unfeaturized
 
 responses:
 
-    utter_ask_first_time:
-    - text: "Is this the first time we have chatted?"
-
-    utter_ask_given_name:
-    - text: "What do your friends call you?"
-
-    utter_we_have_what_we_need:
-    - text: "great! We have what we need"
-
-    utter_your_first_name:
-    - text: "Yes, your first name"
-
-    utter_thats_fine:
-    - text: "OK, that’s fine"
-
-    utter_ask_location:
-    - text: "Where are you?"
-      buttons:
-      - title: "N. Kivu"
-        payload: "kivu_nord"
-      - title: "S. Kivu"
-        payload: "kivu_sud"
-      - title: "Ituri"
-        payload: "ituri"
-      - title: "Other"
-        payload: "other"
-
-    utter_welcome_back:
-    - text: "Welcome back!"
-
-    utter_ask_willing_to_do_language_survey:
-    - text: "Would you be willing to tell me a bit about the languages you speak?"
-
-    utter_ask_myth_source:
-    - text: "If you don't mind me asking - where did you hear that?"
-      buttons:
-      - title: "Friends & Family"
-        payload: "friends_and_family"
-      - title: "Radio"
-        payload: "radio"
-      - title: "WhatsApp"
-        payload: "whatsapp"
-      - title: "Twitter"
-        payload: "twitter"
-
-    utter_ask_language_at_home:
-    - text: "What language you mainly speak at home?"
-
-    utter_ask_language_for_written_comms:
-    - text: "Which language do you prefer to *read* information in?"
-
-    utter_ask_language_for_verbal_comms:
-    - text: "And is that the same language you like to *listen* to information in?\n\n If not, which language do you prefer?"
-
-    utter_ask_preferred_channel:
-    - text: "How do you prefer to receive information?"
-      buttons:
-      - title: "talking to people"
-        payload: "in_person"
-      - title: "radio"
-        payload: "radio"
-      - title: "leaflet"
-        payload: "leaflet"
-      - title: "WhatsApp"
-        payload: "WhatsApp"
-      - title: "SMS"
-        payload: "SMS"
-      - title: "Other"
-        payload: "other"
-
-    utter_ask_feedback:
-    - text: "Did we do ok?"
-      buttons:
-      - title: "Yes"
-        payload: "/affirm"
-      - title: "No"
-        payload: "/deny"
-
-    utter_infection_stats:
-    - text: "There are currently {active} people infected in {country}, a change of {new} on yesterday."
-
-    utter_ask_feedback_reason:
-    - text: "Could you tell us what you think we could better?"
-
-    utter_ask_name:
-    - text: "What's your name?"
-
-    utter_ask_mail:
-    - text: "What's your email address?"
-
-    utter_greet:
-    - text: "Hey! It's nice to talk to you."
-    - text: "Hi. Hope you're having a good day."
-
-    utter_greet_with_name:
-    - text: "Hi {given_name}!"
-    - text: "Hey {given_name}, how's your day going?"
-
-    utter_get_informed_consent:
-    - text: "
-            Hi. Thanks for getting in touch. My name is <~~bot_name~~ Uji> Don’t worry, no one can identify
-            you from your questions or comments however we want you to know that we
-            will collect and analyze what you type. If we do, we we’ll use it to make this service
-            better. We promise that we’ll **NEVER** use your personal information,
-            including your phone number, unless you tell us that we can.
-            By carrying on this conversation, we will assume that you agree. Thank you
-            "
+    utter_anything_else_fr:
+      - text: "Autre chose que je peux essayer de répondre pour vous?"
 
-    utter_set_expectations:
-    - text: "
-            I can answer questions about COVID-19, what would you like to know?
-            \n\nFor instance, I can tell you how many people have the disease, or how to keep yourself safe.
-            \n\nI haven't been doing this long, so please be patient with me!
-            "
-    - text: "
-            I can answer questions about COVID-19, what would you like to know?
-            \n\nFor instance, I can tell you how many people have the disease, or how to keep yourself safe.
-            "
+    utter_ask_anything_else_fr:
+      - text: "Autre chose que je peux essayer de répondre pour vous?"
 
-    utter_introduce_survey:
-    - text: "
-            I speak French and Swahili, but I'm learning to speak more. \n\n
-            I'd like to ask you a few questions about the languages you know...
-            "
+    utter_ask_feedback_reason_fr:
+      - text: "Pourriez-vous nous dire ce que vous pensez que nous pourrions améliorer"
 
-  # utter_cheer_up:
-  # - text: "Here is something to cheer you up:"
-  #   image: "https://i.imgur.com/nGF1K8f.jpg"
-  #
-    utter_explain_pandemic:
-    - text: "An epidemic is local or regional, a pandemic is in multiple countries and regions across the world."
+    utter_ask_first_time_fr:
+      - text: "Est-ce la première fois que nous discutons"
 
-    utter_explain_pandemic2:
-    - text: "Here's something to explain the differences"
-      image: "https://cdn.technologynetworks.com/tn/images/body/endemicvsepidemicimage41568108070133.png"
+    utter_ask_given_name_fr:
+      - text: "Quel nom voulez-vous que je vous appelle"
+      - text: "Comment tes amis t'appellent-ils"
 
-    utter_explain_pandemic3:
-    - text: "Here's something to explain the differences"
-      custom:
-        attachment:
-          type: video
-          payload:
-            title: "My video"
-            src: "https://www.youtube.com/watch?v=nMelwUuGqpA"
+    utter_ask_language_at_home_fr:
+      - text: "Quelle langue parlez-vous principalement à la maison"
 
+    utter_ask_language_for_verbal_comms_fr:
+      - text: "Et est-ce la même langue dans laquelle vous aimez * écouter * les informations?\n\n Sinon, dans quelle langue préférez-vous"
 
-    utter_thanks_for_your_feedback:
-    - text: "Thanks, that's interesting!"
-    - text: "I appreciate your feedback"
+    utter_ask_language_for_written_comms_fr:
+      - text: "Dans quelle langue préférez-vous * lire * les informations"
 
-    utter_answer_covid_myth_cure:
-    - text: "To date, there is NO specific medicine recommended to prevent or treat the coronavirus."
+    utter_ask_willing_to_do_language_survey_fr:
+      - text: "Seriez-vous prêt à me parler un peu des langues que vous parlez"
 
-    utter_answer_covid_myth_antibiotics:
-    - text: "Antibiotics DO NOT work against viruses, antibiotics only work against bacteria."
+    utter_collect_fallback_fr:
+      - text: "Il semblerait que je rencontre quelques difficultés. Toutes mes excuses. Recommençons, en quoi puis-je vous aider aujourd'hui ?"
+      - text: "Désolé, je n'ai pas bien compris. Veuillez répéter votre question d'une manière différente, s'il vous plaît."
 
-    utter_answer_covid_myth_garlic:
-    - text: "Garlic is healthy but there is NO evidence from the current outbreak that eating garlic has protected people from the coronavirus."
+    utter_explain_pandemic_fr:
+      - text: ""
 
-    utter_answer_covid_myth_saline_rinse:
-    - text: "There is NO evidence that regularly rinsing the nose with saline has protected people from infection with the coronavirus."
+    utter_explain_pandemic2_fr:
+      - text: ""
+
+    utter_explain_pandemic3_fr:
+      - text: ""
+
+    utter_get_back_on_topic_fr:
+      - text: "Je peux répondre aux questions sur COVID-19 ou des questions générales sur la santé"
+
+    utter_get_infection_stats_fr:
+      - text: "Il y a actuellement {active} personnes infectées dans {country}, un changement de {new} hier, {new_deaths} nouvelles fatalités ({total_deaths} totale)"
+
+    utter_get_informed_consent_fr:
+      - text: "Salut. Merci de m'avoir contacté. Mon nom est <Uji - Ukingo Jibu> Ne vous inquiétez pas, personne ne peut vous identifier à partir de vos questions ou commentaires, mais nous voulons que vous sachiez que nous collecterons et analyserons ce que vous tapez. Si nous le faisons, nous l’utiliserons pour améliorer ce service. Nous nous engageons à ne JAMAIS utiliser vos informations personnelles, y compris votre numéro de téléphone, sauf si vous nous le dites. En poursuivant cette conversation, nous supposerons que vous êtes d'accord. Je vous remerci"
+
+    utter_goodbye_fr:
+      - text: "D'accord. N'hésitez pas à nous recontacter pour toute autre question"
+
+    utter_greet_with_name_fr:
+      - text: "Salut {given_name_fr}"
+
+    utter_introduce_survey_fr:
+      - text: "Je parle le français et le swahili, mais j'apprends à parler davantage"
+
+    utter_no_local_stats_fr:
+      - text: "Je suis désolé, je n'ai pas d'informations locales - mais j'ai les statistiques nationales d'aujourd'hui"
+
+    utter_out_of_scope_fr:
+      - text: "Désolé, je ne sais pas encore comment y répondre."
 
-    utter_answer_covid_myth_other_vaccines:
-    - text: "Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenzae type b (Hib) vaccine, DO NOT provide protection against the coronavirus."
+    utter_reply_goodbye_fr:
+      - text: "Parfait. N'hésitez pas à nous recontacter pour toute autre question."
 
-    utter_answer_covid_myth_alcohol_chlorine:
-    - text: "Spraying alcohol or chlorine all over your body WILL NOT kill viruses that have already entered your body"
+    utter_reply_greeting_fr:
+      - text: "Bonjour ! Je peux répondre à des questions au sujet du COVID-19. En quoi puis-je vous aider aujourd'hui ?"
 
-    utter_answer_covid_myth_thermal_scanners:
-    - text: "Thermal scanners CAN detect if people have a fever but CANNOT detect whether or not someone has the coronavirus"
+    utter_reply_thanks_fr:
+      - text: "Merci à toi!"
 
-    utter_answer_covid_myth_UV:
-    - text: "Ultraviolet light SHOULD NOT be used for sterilization and can cause skin irritation"
+    utter_reply_where_do_you_live_fr:
+      - text: "Je suis un ordinateur, j'habite dans les téléphones."
+      - text: "Je suis un ordinateur, j'habite dans les nuages"
 
-    utter_answer_covid_myth_hand_dryers:
-    - text: "Hand dryers are NOT effective in killing the coronavirus"
+    utter_set_expectations_fr:
+      - text: "Je peux répondre à des questions sur COVID-19, que voulez-vous savoir? \n\nPar exemple, je peux vous dire combien de personnes souffrent de la maladie, ou comment vous protéger.\n\nJe ne fais pas ça depuis si longtemps, alors soyez patient avec moi"
 
-    utter_answer_covid_myth_hot_bath:
-    - text: "Taking a hot bath DOES NOT prevent the coronavirus"
+    utter_thanks_for_your_feedback_fr:
+      - text: "Merci de partager vos idées et vos préoccupations avec moi"
+      - text: "J'apprécie vos commentaires"
 
-    utter_answer_covid_myth_pets:
-    - text: "There is NO evidence that companion animals/pets such as dogs or cats can transmit the coronavirus."
+    utter_welcome_back_fr:
+      - text: "C'est un plaisir de vous revoir"
+      - text: "Merci d'être revenu"
 
-    utter_answer_covid_myth_mosquitos:
-    - text: "The coronavirus CANNOT be transmitted through mosquito bites."
+    utter_reply_whats_your_name_fr:
+      - text: "Je m'appelle Uji"
 
-    utter_answer_covid_myth_heat_kills:
-    - text: "The coronavirus CAN be transmitted in areas with hot and humid climates"
+    utter_reply_to_request_for_french_fr:
+      - text: "Je suis désolé, je semble avoir complètement mal compris la question. Pourriez-vous réessayer?"
 
-    utter_answer_covid_myth_cold_kills:
-    - text: "Cold weather and snow CANNOT kill the coronavirus."
+    utter_reply_to_wrong_answer_fr:
+      - text: "Je suis désolé, nous en prendrons note et le changerons dès que possible."
 
-    utter_answer_covid_myth_only_old:
-    - text: "People of all ages CAN be infected by the coronavirus. Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus."
+    utter_share_with_your_friends_fr:
+      - text: "Pour partager avec vos amis, envoyez-leur ce lien: https://t.me/twb_uji_drc_bot"
 
-    utter_answer_covid_children_stress:
-    - text: "Children may respond to stress in different ways such as being more clingy, anxious, withdrawing, angry or agitated, bedwetting etc. Respond to your child’s reactions in a supportive way, listen to their concerns and give them extra love and attention. Children need adults’ love and attention during difficult times. Give them extra time and attention. Remember to listen to your children, speak kindly and reassure them. If possible, make opportunities for the child to play and relax. Try and keep children close to their parents and family and avoid separating children and their caregivers to the extent possible. If separation occurs (e.g. hospitalization) ensure regular contact (e.g. via phone) and re-assurance. Keep to regular routines and schedules as much as possible, or help create new ones in a new environment, including school/learning as well as time for safely playing and relaxing. ℹ Provide facts about what has happened, explain what is going on now and give them clear information about how to reduce their risk of being infected by the disease in words that they can understand depending on their age. This also includes providing information about what could happen in a re-assuring way (e.g. a family member and/or the child may start not feeling well and may have to go to the hospital for some time so doctors can help them feel better)."
+    utter_ask_location_fr:
+      - text: "Où es-tu?"
+        buttons:
+        - title: "N. Kivu"
+          payload: "kivu_nord"
+        - title: "S. Kivu"
+          payload: "kivu_sud"
+        - title: "Ituri"
+          payload: "ituri"
+        - title: "autre"
+          payload: "other"
+
+    utter_ask_myth_source_fr:
+      - text: "Si je peux vous demander - où avez-vous entendu cela?"
+        buttons:
+        - title: "Friends & Family"
+          payload: "f_and_f"
+        - title: "Radio"
+          payload: "radio"
+        - title: "WhatsApp"
+          payload: "whatsapp"
+        - title: "Twitter"
+          payload: "twitter"
+
+    utter_ask_preferred_channel_fr:
+      - text: "Comment préférez-vous recevoir des informations?"
+        buttons:
+        - title: "Parler"
+          payload: "in_person"
+        - title: "radio"
+          payload: "radio"
+        - title: "leaflet"
+          payload: "leaflet"
+        - title: "WhatsApp"
+          payload: "WhatsApp"
+        - title: "SMS"
+          payload: "SMS"
+        - title: "Autre"
+          payload: "Other"
 
-    utter_answer_covid_stress:
-    - text: "It is normal to feel sad, stressed, confused, scared or angry during a crisis. Talking to people you trust can help. Contact your friends and family. If you must stay at home, maintain a healthy lifestyle - including proper diet, sleep, exercise and social contacts with loved ones at home and by email and phone with other family and friends. Don’t use smoking, alcohol or other drugs to deal with your emotions. If you feel overwhelmed, talk to a health worker or counsellor. Have a plan, where to go to and how to seek help for physical and mental health needs if required. ℹ Get the facts. Gather information that will help you accurately determine your risk so that you can take reasonable precautions. Find a credible source you can trust such as WHO website or, a local or state public health agency. Limit worry and agitation by lessening the time you and your family spend watching or listening to media coverage that you perceive as upsetting. Draw on skills you have used in the past that have helped you to manage previous life’s adversities and use those skills to help you manage your emotions during the challenging time of this outbreak."
+    utter_ask_feedback_fr:
+      - text: "Avons-nous bien fait?"
+        buttons:
+        - title: "Oui"
+          payload: "/affirm"
+        - title: "Non"
+          payload: "/deny"
 
-    utter_answer_covid_donate:
-    - text: "Donate now to help fight coronavirus The Covid-19 Solidarity Response Fund is a secure way for individuals, philanthropies and businesses to contribute to the WHO-led effort to respond to the pandemic. Donate here: https://bit.ly/who-covid-19-donate"
+    utter_answer_covid_anxiety_fr:
+      - text: "Les symptômes du coronavirus (COVID-19) sont généralement légers pour la plupart des gens, en particulier les jeunes et les personnes en bonne santé. Cependant, dans certains cas, il peut provoquer une maladie grave: environ 1 personne sur 5 qui l'attrape a besoin de soins hospitaliers. Il est donc tout à fait normal que les gens s'inquiètent de la façon dont le coronavirus pourrait les affecter ainsi que leurs proches. La chose la plus puissante que nous puissions faire est de prendre des mesures pour nous protéger, protéger nos proches et nos communautés. D'abord, le lavage régulier et minutieux des mains et le respect des mesures d'hygiène. Deuxièmement, restez informé et suivez les conseils des autorités sanitaires locales, y compris toute restriction mise en place sur les voyages, les déplacements et les rassemblements. Apprenez-en plus sur la façon de vous protéger sur: https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
 
-    utter_answer_covid_travel_advice:
-    - text: "WHO continues to advise against the application of travel or trade restrictions to countries experiencing COVID-19 outbreaks. It is prudent for travellers who are sick to delay or avoid travel to affected areas, in particular for elderly travellers and people with chronic diseases or underlying health conditions. _Affected areas_ are considered those countries, provinces, territories or cities experiencing ongoing transmission of COVID-19, in contrast to areas reporting only imported cases.  General recommendations for all travellers include: Wash your hands frequently Avoid touching your eyes, mouth and nose Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze Stay more than 1 meter (3 feet) away from a person who is sick Follow proper food hygiene practices Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19. Travellers returning from affected areas should: Self-monitor for symptoms for 14 days and follow national protocols of receiving countries. Some countries may require returning travellers to enter quarantine.  If symptoms occur, such as fever, or cough or difficulty breathing, travellers are advised to contact local health care providers, preferably by phone, and inform them of their symptoms and their travel history.  For the latest travel advice: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/travel-advice For the latest situation reports for affected areas:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/ For advice on proper food hygiene practices: https://www.who.int/foodsafety/publications/consumer/en/5keys_en.pdf?ua=1&ua=1 For advice on visiting live animal markets: https://www.who.int/health-topics/coronavirus/who-recommendations-to-reduce-risk-of-transmission-of-emerging-pathogens-from-animals-to-humans-in-live-animal-markets"
+    utter_answer_covid_call_a_doctor_fr:
+      - text: "Si vous toussez, avez de la fièvre et des difficultés respiratoires, consultez rapidement un médecin – mais téléphonez d'abord à votre centre médical par téléphone."
 
-    utter_answer_covid_myths_summary:
-    - text: "There is a lot of false information around. These are the facts. - People of all ages CAN be infected by the coronavirus. Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus. Cold weather and snow CANNOT kill the coronavirus. The coronavirus CAN be transmitted in areas with hot and humid climates The coronavirus CANNOT be transmitted through mosquito bites. There is NO evidence that companion animals/pets such as dogs or cats can transmit the coronavirus. Taking a hot bath DOES NOT prevent the coronavirus Hand dryers are NOT effective in killing the coronavirus Ultraviolet light SHOULD NOT be used for sterilization and can cause skin irritation Thermal scanners CAN detect if people have a fever but CANNOT detect whether or not someone has the coronavirus Spraying alcohol or chlorine all over your body WILL NOT kill viruses that have already entered your body Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenzae type b (Hib) vaccine, DO NOT provide protection against the coronavirus. There is NO evidence that regularly rinsing the nose with saline has protected people from infection with the coronavirus.  Garlic is healthy but there is NO evidence from the current outbreak that eating garlic has protected people from the coronavirus. Antibiotics DO NOT work against viruses, antibiotics only work against bacteria. To date, there is NO specific medicine recommended to prevent or treat the coronavirus. Check the facts on the WHO website: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+    utter_answer_covid_children_stress_fr:
+      - text: "Dans les moments difficiles, les enfants peuvent réagir de différentes manières. Ils peuvent avoir peur ou être en colère. Ils peuvent montrer des changements dans leur comportement, comme mouiller le lit, vouloir se rapprocher de vous ou devenir silencieux et renfermé.  Répondez aux réactions de votre enfant de manière encourageante, écoutez ses préoccupations et accordez-lui un amour et une attention supplémentaires. Les enfants ont besoin de l’amour et de l’attention des adultes dans les moments difficiles. Écoutez vos enfants et parlez gentiment. Dans la mesure du possible, faites en sorte que l'enfant puisse jouer et se détendre. Respectez les routines et les horaires réguliers autant que possible.  Essayez de garder les enfants près de leurs parents et de leur famille. Si une séparation se produit (par exemple, une personne doit se rendre à l'hôpital), assurez-vous d'un contact régulier (par téléphone) et assurez-vous qu'ils se sentent en sécurité et soutenue.  Donnez-leur des faits sur ce qui s'est passé; Expliquez ce qui se passe actuellement et donnez-leur des informations claires sur la façon de réduire leur risque d'être infecté par la maladie avec des mots qu'ils peuvent comprendre en fonction de leur âge. Cela comprend également la fourniture d'informations sur ce qui pourrait se produire de manière rassurante (par exemple, un membre de la famille et / ou l'enfant peut commencer à ne pas se sentir bien et peut-être à aller à l'hôpital pendant un certain temps afin que les médecins puissent les aider à se sentir mieux)."
 
-    utter_answer_covid_donts:
-    - text: "The following measures ARE NOT effective against COVID-2019 and can be harmful: - Smoking - Wearing multiple masks - Taking antibiotics In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be  sure to share your recent travel history with your health care provider."
+    utter_answer_covid_disinfect_fr:
+      - text: "Pour se protéger du coronavirus (COVID-19), il faut désinfecter les objets et les surfaces, en particulier ceux que vous touchez régulièrement. Il faut jamais boire de produits désinfectants tels que le méthanol, l’éthanol et l’eau de Javel. Ils ne détruisent pas le virus dans l’organisme et entraînent des lésions des organes internes."
 
-    utter_answer_covid_on_surfaces:
-    - text: "It is not certain how long the virus that causes COVID-19 survives on surfaces, but it seems to behave like other coronaviruses. Studies suggest that coronaviruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to several days. This may vary under different conditions (e.g. type of surface, temperature or humidity of the environment). The likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low. If you think a surface may be infected, clean it with simple disinfectant to kill the virus and protect yourself and others. Clean your hands with an alcohol-based hand rub or wash them with soap and water. Avoid touching your eyes, mouth, or nose."
+    utter_answer_covid_donts_fr:
+      - text: "Les mesures suivantes NE SONT PAS efficaces contre le coronavirus (COVID-19) et peuvent être nocives: - Fumer - Prise d'antibiotiques - Boire du méthanol, de l'éthanol ou d'autres désinfectants  Méfiez-vous des rumeurs. Obtenez vos informations auprès de sources expertes telles que le ministère de la Santé ou l'OMS. https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
 
-    utter_answer_covid_infection_sources:
-    - text: "Coronaviruses are a large family of viruses that are common in animals. Occasionally, people get infected with these viruses which may then spread to other people. For example, SARS-CoV was associated with civet cats and MERS-CoV is transmitted by dromedary camels. Possible animal sources of COVID-19 have not yet been confirmed.   To protect yourself, such as when visiting live animal markets, avoid direct contact with animals and surfaces in contact with animals. Ensure good food safety practices at all times. Handle raw meat, milk or animal organs with care to avoid contamination of uncooked foods and avoid consuming raw or undercooked animal products. While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can transmit COVID-19. COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks. To protect yourself, clean your hands frequently and thoroughly.  WHO continues to monitor the latest research on this and other COVID-19 topics and will update as new findings are available. The risk of catching COVID-19 from the feces of an infected person appears to be low. While initial investigations suggest the virus may be present in feces in some cases, spread through this route is not a main feature of the outbreak. WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share new findings. Because this is a risk, however, it is another reason to clean hands regularly, after using the bathroom and before eating."
+    utter_answer_covid_explain_pandemic_fr:
+      - text: "Une épidémie est locale ou régionale, une pandémie sévit dans plusieurs pays et régions du monde."
 
-    utter_answer_covid_incubation:
-    - text: "The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available."
+    utter_answer_covid_gloves_fr:
+      - text: "Le fait de se laver les mains régulièrement protège mieux contre la COVID-19 que le port de gants en caoutchouc. Le virus peut se trouver sur les gants et il y a un risque de contamination si vous vous touchez le visage avec les gants. Se laver les mains est plus efficace que de porter des gants."
 
-    utter_answer_covid_masks:
-    - text: "Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19. Disposable face mask can only be used once. If you are not ill or looking after someone who is ill then you are wasting a mask. There is a world-wide shortage of masks, so WHO urges people to use masks wisely. WHO advises rational use of medical masks to avoid unnecessary wastage of precious resources and mis-use of masks  (see Advice on the use of masks). The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing. See basic protective measures against the new coronavirus for more information. Remember, a mask should only be used by health workers, care takers, and individuals with respiratory symptoms, such as fever and cough. Before touching the mask, clean hands with an alcohol-based hand rub or soap and water. Take the mask and inspect it for tears or holes. Orient which side is the top side (where the metal strip is). Ensure the proper side of the mask faces outwards (the coloured side). Place the mask to your face. Pinch the metal strip or stiff edge of the mask so it moulds to the shape of your nose. Pull down the mask’s bottom so it covers your mouth and your chin. After use, take off the mask; remove the elastic loops from behind the ears while keeping the mask away from your face and clothes, to avoid touching potentially contaminated surfaces of the mask. Discard the mask in a closed bin immediately after use. Perform hand hygiene after touching or discarding the mask - Use alcohol-based hand rub or, if visibly soiled, wash your hands with soap and water."
+    utter_answer_covid_hospital_fr:
+      - text: "La plupart des patients du coronavirus (COVID-19) (environ 80 %) ‎guérissent sans qu’il soit nécessaire de les ‎hospitaliser. Si vous avez de la toux, de la fièvre et des difficultés respiratoires, consultez rapidement un médecin – mais contactez d'abord votre centre médical par téléphone."
 
-    utter_answer_covid_SARS:
-    - text: "The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are quite different. SARS was more deadly but much less infectious than COVID-19. There have been no outbreaks of SARS anywhere in the world since 2003."
+    utter_answer_covid_how_spread_fr:
+      - text: "Les gens peuvent attraper le coronavirus (COVID-19) en entrant en contact avec d'autres personnes atteintes du virus. La maladie peut se propager d'une personne à l'autre par de petites gouttelettes provenant du nez ou de la bouche et qui se propagent lorsqu'une personne atteinte du COVID-19 tousse ou expire. Ces gouttelettes atterrissent sur les objets et les surfaces autour de la personne. D'autres personnes attrapent ensuite le COVID-19 en touchant ces objets ou surfaces, puis en touchant leurs yeux, leur nez ou leur bouche. Les gens peuvent également attraper le coronavirus (COVID-19) s'ils respirent des gouttelettes d'une personne atteinte de coronavirus (COVID-19) qui tousse ou transmet des gouttelettes. C'est pourquoi il est important de rester à plus d'un mètre d'une personne malade. L'OMS évalue les recherches en cours sur la manière dont le coronavirus (COVID-19) se propage et continuera de partager les résultats actualisés."
 
-    utter_answer_covid_treatments:
-    - text: "While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. WHO will continue to provide updated information as soon as clinical findings are available. There is no vaccine yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care. Possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19. The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing. (See Basic protective measures against the new coronavirus)."
+    utter_answer_covid_incubation_fr:
+      - text: "La « période d'incubation » représente le temps entre le moment où le virus est contracté et le début des symptômes de la maladie. La plupart des estimations de la période d'incubation du Coronavrius (COVID-19) vont de 1 à 14 jours, le plus souvent autour de cinq jours."
 
-    utter_answer_covid_most_at_risk:
-    - text: "While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to develop serious illness more often than others."
+    utter_answer_covid_infection_likelihood_fr:
+      - text: "Le risque dépend de l'endroit où vous vous trouvez et plus précisément, s'il y a une épidémie du coronavrius (COVID-19) présente sur le territoire. Pour les personnes vivant ou visitant ces zones, le risque d'attraper le coronavirus (COVID-19) est plus élevé. Assurez-vous de respecter toutes les restrictions locales concernant les voyages, les déplacements ou les grands rassemblements. Il est important de connaître la situation dans laquelle vous vous trouvez ou dans laquelle vous entrez. Le respect des conseils officiels réduira votre risque d'attraper ou de transmettre le coronavirus (COVID-19)."
 
-    utter_answer_covid_anxiety:
-    - text: "Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness: about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the COVID-19 outbreak will affect them and their loved ones. We can channel our concerns into actions to protect ourselves, our loved ones and our communities. First and foremost among these actions is regular and thorough hand-washing and good respiratory hygiene. Secondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel, movement and gatherings. Learn more about how to protect yourself at https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+    utter_answer_covid_infection_sources_fr:
+      - text: "Les sources originales du coronavirus (COVID-19) n'ont pas encore été confirmées. Le coronavirus (COVID-19) se propage entre les humaines principalement par les gouttelettes produites lorsqu'une personne infectée tousse, éternue ou parle. L'OMS évalue les recherches en cours sur la manière dont le coronavirus (COVID-19) se propage et continuera de partager ses nouvelles découvertes."
 
-    utter_answer_covid_infection_likelihood:
-    - text: "The risk depends on where you  are - and more specifically, whether there is a COVID-19 outbreak unfolding there. For most people in most locations the risk of catching COVID-19 is still low. However, there are now places around the world (cities or areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce your risk of catching or spreading COVID-19. COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation where you are or intend to go. WHO publishes daily updates on the COVID-19 situation worldwide. You can see these at https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"
+    utter_answer_covid_isolate_fr:
+      - text: "La majorité de malades présente des symptômes 14 jours après avoir été en contact avec le virus. Pour cette raison, les personnes présentant les symptômes ou des personnes qui avaient eu contact avec quelqu'un présentant les symptômes doivent être isolées (cela signifie être loin de tout contact physique avec quelqu'un d'autre) pendant 14 jours."
 
-    utter_answer_covid_protection:
-    - text: "You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions: Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.  Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands. Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing. Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease. Avoid touching eyes, nose and mouth.  Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.  Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately. Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19.  Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections. Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places - especially if you are an older person or have diabetes, heart or lung disease. Why? You have a higher chance of catching COVID-19 in one of these areas."
+    utter_answer_covid_masks_availability_fr:
+      - text: "Demandez à votre centre de santé où vous pouvez vous procurer un masque. Portez un masque si vous toussez ou éternuez. Si vous portez un masque, il est important que vous sachiez l’utiliser et l’éliminer correctement "
 
-    utter_answer_covid_how_spread:
-    - text: "People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.   These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth.  People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets.  This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick. WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share updated findings."
+    utter_answer_covid_masks_care_fr:
+      - text: "En règle générale, vous ne devez porter un masque qu'une seule fois. Portez un masque si vous toussez ou éternuez. Si vous portez un masque, il est important que vous sachiez l’utiliser et l’éliminer correctement -Lorsque l’on porte un masque, éviter de le toucher; chaque fois que l’on touche un masque usagé, se laver les mains à l’aide d’une solution hydroalcoolique ou à l’eau et au savon  -Lorsqu’il s’humidifie, le remplacer par un nouveau masque et ne pas réutiliser des masques à usage unique -Pour retirer le masque: l’enlever par derrière (ne pas toucher le devant du masque); le jeter immédiatement dans une poubelle fermée; se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon"
 
-    utter_answer_covid_what_is_corona_covid-19:
-    - text: "Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as  Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.  COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019."
+    utter_answer_covid_masks_effectiveness_fr:
+      - text: "Les masques offrent une certaine protection et aident à empêcher la propagation du virus. Portez un masque si vous toussez ou éternuez. Si vous portez un masque, il est important que vous sachiez l’utiliser et l’éliminer correctement."
 
-    utter_answer_covid_symptoms:
-    - text: "Any of: Fever, joint pain, headaches, dry cough, loss of sense of smell may be symptoms"
+    utter_answer_covid_masks_how_to_fr:
+      - text: "Portez un masque si vous toussez ou éternuez. Si vous portez un masque, il est important que vous sachiez l’utiliser et l’éliminer correctement -Avant de mettre un masque, se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon -Appliquer le masque de façon à recouvrir le nez et la bouche et veillez à l’ajuster au mieux sur votre visage -Lorsque l’on porte un masque, éviter de le toucher; chaque fois que l’on touche un masque usagé, se laver les mains à l’aide d’une solution hydroalcoolique ou à l’eau et au savon  -Lorsqu’il s’humidifie, le remplacer par un nouveau masque et ne pas réutiliser des masques à usage unique -Pour retirer le masque: l’enlever par derrière (ne pas toucher le devant du masque); le jeter immédiatement dans une poubelle fermée; se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon.  https://www.youtube.com/watch?v=KuT1KNfJIjc"
 
-    utter_answer_wash_hands_how:
-    - text: "You should wash your hands with clean water and soap, for at least 20 seconds. If you have no access to soap and water use sanitizer."
+    utter_answer_covid_risk_most_at_risk_fr:
+      - text: "Toute personne court le risque de tomber malade gravement du COVID-19. Les personnes plus ‎âgées et celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade. Les personnes ‎de tout âge qui présentent de la fièvre et/ou ‎une toux associée à des difficultés à ‎respirer/un essoufflement, une ‎douleur/une pression au niveau de la ‎poitrine, ou bien une perte de la parole ou ‎des difficultés à se déplacer doivent ‎consulter un médecin immédiatement."
 
-    utter_answer_wash_hands_frequency:
-    - text: "You should wash your hands a lot"
+    utter_answer_covid_risk_for_children_fr:
+      - text: "Les enfants courent aussi le risque d'être contaminé par le virus. Les personnes plus ‎âgées et celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade. Les personnes ‎de tout âge qui présentent de la fièvre et/ou ‎une toux associée à des difficultés à ‎respirer/un essoufflement, une ‎douleur/une pression au niveau de la ‎poitrine, ou bien une perte de la parole ou ‎des difficultés à se déplacer doivent ‎consulter un médecin immédiatement."
 
-    utter_answer_collect_fallback:
-    - text: "Looks like I'm having trouble. Apologies for that. Let's start again, how can I help you today?"
+    utter_answer_covid_risk_for_old_people_fr:
+      - text: "Les personnes plus ‎âgées et celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade. Les personnes ‎de tout âge qui présentent de la fièvre et/ou ‎une toux associée à des difficultés à ‎respirer/un essoufflement, une ‎douleur/une pression au niveau de la ‎poitrine, ou bien une perte de la parole ou ‎des difficultés à se déplacer doivent ‎consulter un médecin immédiatement."
 
-    utter_answer_fallback:
-    - text: "I'm sorry didn't quite get that. Please say that again."
+    utter_answer_covid_risk_with_preexisting_fr:
+      - text: "Celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade. Les personnes ‎de tout âge qui présentent de la fièvre et/ou ‎une toux associée à des difficultés à ‎respirer/un essoufflement, une ‎douleur/une pression au niveau de la ‎poitrine, ou bien une perte de la parole ou ‎des difficultés à se déplacer doivent ‎consulter un médecin immédiatement."
 
-    utter_out_of_scope:
-    - text: "Sorry, I don't know how to respond to that."
-    - text: "I'm sorry, I can't answer that now."
-    - text: "I don't know what to say to that"
+    utter_answer_covid_myth_alcohol_chlorine_fr:
+      - text: "Pulvériser de l'alcool, du chlore ou d’autres désinfectants sur votre corps ou leur introduction dans l'organisme ne protègent pas contre le coronavirus (COVID-19) et peuvent être dangereuses."
 
-    utter_get_back_on_topic:
-    - text: "Any questions about COVID-19 or general questions about health I can help you with?"
+    utter_answer_covid_myth_antibiotics_fr:
+      - text: "Les antibiotiques n'agissent PAS sur les virus, les antibiotiques n'agissent que sur les bactéries."
 
-    utter_anything_else_question:
-    - text: "Anything else I can try to answer for you?"
+    utter_answer_covid_myth_cold_kills_fr:
+      - text: "Le froid et la neige NE PEUVENT PAS tuer le coronavirus (COVID-19)."
 
-    utter_answer_goodbye:
-    - text: "Goodbye. Please reach out again if you have any questions."
-    - text: "Bye! Nice talking with you!"
+    utter_answer_covid_myth_drink_fr:
+      - text: "Boire du méthanol, de l’éthanol ou d’autres désinfectants NE PERMET PAS de prévenir ou de guérir le coronavirus (COVID-19) et peut être extrêmement dangereux"
 
-    utter_answer_greeting:
-    - text: "Hello! I can answer questions about COVID-19. How can I help with today?"
+    utter_answer_covid_myth_drink_alcohol_fr:
+      - text: "Boire de l'alcool ne protège pas contre le coronavirus (COVID-19) et peut être dangereux"
 
-    utter_goodbye:
-    - text: "Goodbye. Please reach out again if you have any questions."
-    - text: "Bye! Nice talking with you!"
+    utter_answer_covid_myth_flies_fr:
+      - text: "Il n’y a aucune donnée ou information tendant à montrer que les mouches domestiques transmettent le coronavirus (COVID-19). Le virus se transmet principalement par les gouttelettes qu’une personne infectée expulse quand elle tousse, éternue ou parle."
 
+    utter_answer_covid_myth_fruits_fr:
+      - text: "Manger les fruits est bon pour le santé, mais ne prévient ni ne guérit le virus corona (COVID-19)."
+
+    utter_answer_covid_myth_garlic_fr:
+      - text: "L'ail a des bienfaits sur la santé, mais il n'y a AUCUNE preuve de l'épidémie actuelle selon laquelle manger de l'ail protège du coronavirus."
+
+    utter_answer_covid_myth_hand_dryers_fr:
+      - text: "Les sèche-mains ne permettent PAS de tuer le coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_heat_kills_fr:
+      - text: "Le coronavirus (COVID-19) PEUT être transmis dans les zones à climat chaud et humide. S'exposer au soleil ou à des hautes températures N'EMPÊCHE PAS de contracter la maladie à coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_hold_breath_fr:
+      - text: "Arriver à retenir sa respiration pendant 10 secondes ou plus sans tousser ni se sentir gêné NE SIGNIFIE PAS que l'on est épargné par la maladie à coronavirus (COVID-19) ou toute autre maladie pulmonaire."
+
+    utter_answer_covid_myth_hot_bath_fr:
+      - text: "Prendre un bain chaud ne protège pas contre le coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_mosquitos_fr:
+      - text: "Le coronavirus (COVID-19) NE PEUT PAS être transmis par les piqûres de moustiques."
+
+    utter_answer_covid_myth_only_old_fr:
+      - text: "Les personnes de tous âges PEUVENT attraper le coronavirus (COVID-19). Les personnes âgées et les personnes ayant des antécédents médicaux (tels que l'asthme, le diabète, les maladies cardiaques) semblent être plus vulnérables à contracter une forme sévère du virus."
+
+    utter_answer_covid_myth_other_vaccines_fr:
+      - text: "Les vaccins contre la pneumonie ne permettent AUCUNE protection contre le coronavirus."
+
+    utter_answer_covid_myth_phone_signals_fr:
+      - text: "Les virus ne circulent pas sur les ondes radio ou par les réseaux mobiles."
+
+    utter_answer_covid_myth_saline_rinse_fr:
+      - text: "Rien ne prouve que le fait de se rincer régulièrement le nez avec une solution saline protège les gens contre l’infection par le coronavirus (COVID-19).  "
+
+    utter_answer_covid_myth_spices_fr:
+      - text: "Ajouter du piment dans votre soupe ou dans un autre plat ne permet PAS de prévenir ni de guérir le coronavirus (COVID-19). "
+
+    utter_answer_covid_myth_steam_fr:
+      - text: "L'inhalation de vapeur chaude NE guérit PAS ni n'empêche le coronavirus (COVID-19). L'inhalation de vapeur très chaude est dangereuse."
+
+    utter_answer_covid_myth_thermal_scanners_fr:
+      - text: "Les scanners thermiques PEUVENT détecter si une personne a de la fièvre, mais NE PEUVENT PAS détecter si une personne a contracté ou non le coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_traditional_medicine_fr:
+      - text: "Il n'existe aucun traitement naturel connu qui traite ni stop la contamination au coronavirus. La meilleure protection est d'observer les gestes barrières et se signaler tôt en cas d'apparition des symptômes."
+
+    utter_answer_covid_myth_UV_fr:
+      - text: "La lumière ultraviolette ne DOIT PAS être utilisée pour la stérilisation et celle-ci peut provoquer une irritation de la peau."
+
+    utter_answer_covid_myths_summary_fr:
+      - text: "Il y a beaucoup de fausses informations sur le coronavirus (COVID-19). Voici quelques faits: - La majorité des personnes atteintes du coronavirus peuvent guérir et éliminer le virus de leur corps. - Certaines personnes peuvent développer des formes plus graves de la maladie, comme une pneumonie. Certaines autres personnes, bien qu'infectées, ne présentent que de légers symptômes. - Des personnes de tous âges PEUVENT être infectées par le coronavirus. Les personnes âgées et les personnes ayant des problèmes de santé préexistants (tels que l'asthme, le diabète, les maladies cardiaques) semblent être plus vulnérables à devenir gravement malades avec le virus. -À ce jour, AUCUN médicament spécifique n'est recommandé pour prévenir ou traiter le coronavirus. La majorité des patients se rétablissent avec une thérapie de soutien. -Boire du méthanol, de l'éthanol ou d'autres désinfectants N'empêchera PAS ni ne guérira le coronavirus et peut être extrêmement dangereux.  Vérifiez les faits sur le site Web de l'OMS: https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+
+    utter_answer_covid_on_surfaces_fr:
+      - text: "On ne sait pas exactement combien de temps le virus responsable du coronavirus (COVID-19) survit sur les surfaces, mais il semble se ressembler comme les autres coronavirus. Des études suggèrent que les coronavirus (y compris les informations préliminaires sur le virus COVID-19) peuvent persister sur les surfaces pendant quelques heures ou jusqu'à plusieurs jours. Cela peut varier dans différentes conditions (par exemple, le type de surface, la température ou l'application de l'environnement). Si vous pensez qu'une surface peut être infectée, nettoyez-la avec un simple désinfectant pour tuer le virus, pour vous protéger et protéger les autres. Lavez-vous les mains avec un gel hydroalcoolique ou lavez-les à l'eau et au savon. Évitez de vous toucher les yeux, la bouche ou le nez."
+
+    utter_answer_covid_protection_fr:
+      - text: "'Suivez ces simples précautions pour vous protéger et protéger votre famille contre le coronavirus (COVID-19):  -Lavez-vous les mains régulièrement (pendant au moins 20 secondes) avec un gel à base d'alcool ou lavez-les à l'eau et au savon. Cela tue les virus qui peuvent être présents sur vos mains. -Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. Lorsqu'une personne tousse ou éternue, elle fait passer de petites gouttelettes dans le nez ou la bouche qui peuvent contenir le virus. Évitez de toucher vos yeux, votre nez et votre bouche. Les mains touchent de nombreuses surfaces et peuvent transmettre des virus à votre corps lorsque vous touchez vos yeux, votre nez ou votre bouche. -Couvrez-vous la bouche et le nez avec votre coude plié ou un mouchoir lorsque vous toussez ou éternuez. Jetez ensuite immédiatement le tissu utilisé. Des gouttelettes d'éternuements ou de toux peuvent propager le virus. -Restez à la maison si vous ne vous sentez pas bien. Si vous avez de la fièvre, de la toux et des difficultés respiratoires, consultez un médecin et appelez à l'avance. Suivez les instructions de votre autorité sanitaire locale. "
+
+    utter_answer_covid_protection_wash_hands_fr:
+      - text: "Suivez ces simples précautions pour vous protéger et protéger votre famille contre le coronavirus (COVID-19):  -Lavez-vous les mains régulièrement (pendant au moins 20 secondes) avec un gel à base d'alcool ou lavez-les à l'eau et au savon. Cela tue les virus qui peuvent être présents sur vos mains.      "
+
+    utter_answer_covid_protection_keep_distance_fr:
+      - text: "-Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. Lorsqu'une personne tousse ou éternue, elle fait passer de petites gouttelettes dans le nez ou la bouche qui peuvent contenir le virus. Évitez de toucher vos yeux, votre nez et votre bouche. Les mains touchent de nombreuses surfaces et peuvent transmettre des virus à votre corps lorsque vous touchez vos yeux, votre nez ou votre bouche."
+
+    utter_answer_covid_protection_cover_mouth_nose_fr:
+      - text: "-Couvrez-vous la bouche et le nez avec votre coude plié ou un mouchoir lorsque vous toussez ou éternuez. Jetez ensuite immédiatement le tissu utilisé. Des gouttelettes d'éternuements ou de toux peuvent propager le virus."
+
+    utter_answer_covid_protection_stay_at_home_fr:
+      - text: "-Restez à la maison si vous ne vous sentez pas bien. Si vous avez de la fièvre, de la toux et des difficultés respiratoires, consultez un médecin et appelez à l'avance. Suivez les instructions de votre autorité sanitaire locale. "
+
+    utter_answer_covid_SARS_fr:
+      - text: "Le syndrome respiratoire aigu sévère (SRAS) provient de la même famille de virus que le coronavirus actuel (COVID-19) et les deux peuvent provoquer des problèmes respiratoires (respiratoires). Cependant, ce sont des maladies différentes. Il n'y a eu aucune éclosion de SRAS dans le monde depuis 2003."
+
+    utter_answer_covid_stay_at_home_fr:
+      - text: "Si votre gouvernement local vous a conseillé de rester en isolement, protégez-vous et restez à la maison. Même si vous êtes en bonne santé,. Ne sortez que pour les besoins vitaux de votre famille en respectant les mesures conseillées par les autorités sanitaires pour réduire le risque de contracter ou de propager le COVID-19. Si vous présentez des symptômes ou avez été en contact avec une personne présentant des symptômes, restez à la maison pendant au moins 14 jours. Vous pouvez appeler un médecin ou une clinique pour obtenir des conseils médicaux."
+
+    utter_answer_covid_stress_fr:
+      - text: "Il est naturel d’éprouver de la tristesse, du stress, de la confusion, de la peur ou de la colère lors d’une crise. Vous pouvez trouver du réconfort en parlant à des gens en qui vous avez confiance. Prenez contact avec vos amis et les membres de votre famille. Si vous devez rester chez vous, conservez un mode de vie sain, ce qui suppose entre autres un régime alimentaire adapté, du sommeil, de l’exercice et des contacts sociaux avec vos proches à la maison ou par courrier électronique ou téléphone avec le reste de votre famille et vos amis. Ne cherchez pas à canaliser vos émotions en fumant, en buvant de l’alcool ou en consommant d’autres produits stupéfiants. Si vous vous sentez dépassé par les événements, parlez-en à des professionnels de la santé ou à un conseiller. Soyez prêt, sachez où aller et comment solliciter de l’aide en cas de besoin si vous avez des problèmes physiques ou psychologiques.  Informez-vous. Prenez les renseignements qui vous aideront à déterminer avec précision les risques que vous encourez de façon à prendre des précautions raisonnables. Cherchez une source d’information fiable, comme le site web de l’OMS ou un organisme local ou national de santé publique."
+
+    utter_answer_covid_symptoms_fr:
+      - text: "Les symptômes les plus fréquents du coronavirus (COVID-19) sont la fièvre, la toux sèche et la ‎fatigue. D’autres symptômes moins courants ‎peuvent également apparaître chez ‎certaines personnes, comme des ‎courbatures et des douleurs, une congestion ‎nasale, des maux de tête, une conjonctivite, ‎des maux de gorge, une diarrhée, une perte ‎du goût ou de l’odorat, une éruption ‎cutanée ou une décoloration des doigts de la ‎main ou du pied. Certaines personnes peuvent développer des formes plus graves de la maladie, comme une pneumonie. Certaines autres personnes, ‎bien qu’infectées, ne présentent que des ‎symptômes très discrets. Si vous avez de la toux, de la fièvre et des difficultés respiratoires, consultez rapidement un médecin – mais contactez d'abord votre centre médical par téléphone."
+
+    utter_answer_covid_travel_advice_fr:
+      - text: "Il est prudent pour les voyageurs malades de retarder ou d'éviter les déplacements dans les zones affectées, en particulier pour les voyageurs âgés et les personnes souffrant de maladies chroniques ou de problèmes de santé sous-jacents.  Les recommandations générales pour tous les voyageurs comprennent :  -Lavez-vous régulièrement les mains  -Évitez de vous toucher les yeux, la bouche et le nez  -Couvrez-vous la bouche et le nez avec votre coude plié ou avec un mouchoir lorsque vous toussez ou éternuez  -Restez à plus d'un mètre d'une personne malade   Les voyageurs revenant des zones touchées doivent :  -Surveiller les symptômes pendant 14 jours et suivre les protocoles nationaux du pays. -En cas de symptômes tels que la fièvre, la toux ou des difficultés respiratoires, il est conseillé aux voyageurs de contacter les prestataires de soins de santé locaux, de préférence par téléphone, et de les informer de leurs symptômes et de leurs antécédents de voyage."
+
+    utter_answer_covid_treatments_fr:
+      - text: "À ce jour, il n'existe aucun vaccin et aucun médicament spécifique pour prévenir ou traiter le coronavirus (COVID-2019). Des vaccins possibles et certains traitements médicamenteux spécifiques sont en cours de test. Vous ne devez pas vous donner de médicaments tels que des antibiotiques. Cependant, les personnes concernées devraient recevoir des soins pour soulager les symptômes. Les personnes gravement malades doivent être hospitalisées. La plupart des patients se rétablissent grâce aux soins de soutien. On peut guérir de la maladie à coronavirus (COVID-19). Attraper ce virus NE SIGNIFIE PAS qu'on va le garder toute la vie. Si vous avez de la toux, de la fièvre et des difficultés respiratoires, consultez rapidement un médecin – mais contactez d'abord votre centre médical par téléphone."
+
+    utter_answer_covid_wash_hands_frequency_fr:
+      - text: "Lavez-vous les mains très régulièrement avec un produit hydroalcoolique ou à l'eau et au savon."
+
+    utter_answer_covid_wash_hands_how_fr:
+      - text: "Lavez-vous les mains avec de l'eau propre et du savon, pendant au moins 20 secondes. Si vous n'avez pas accès à du savon et à de l'eau, utilisez du gel hydroalcoolique."
+
+    utter_answer_covid_what_is_corona_covid-19_fr:
+      - text: "Les coronavirus sont une grande famille de virus qui peuvent provoquer des maladies chez les animaux ou les humains. Chez l'homme, plusieurs coronavirus sont connus pour provoquer des infections respiratoires allant du rhume à des maladies plus graves. Le coronavirus le plus récemment découvert provoque la maladie à coronavirus (COVID-19). COVID-19 est la maladie infectieuse causée par le coronavirus le plus récemment découvert."
+
+    utter_answer_covid_why_distancing_fr:
+      - text: "Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. Lorsqu'une personne tousse ou éternue, elle fait passer de petites gouttelettes dans le nez ou la bouche qui peuvent contenir le virus. Évitez de toucher vos yeux, votre nez et votre bouche. Les mains touchent de nombreuses surfaces et peuvent transmettre des virus à votre corps lorsque vous touchez vos yeux, votre nez ou votre bouche. "
+
+    utter_anything_else_sw:
+      - text: "Kitu kingine chochote ambacho ninaweza kujaribu kukujibu?"
+
+    utter_ask_anything_else_sw:
+      - text: "Kitu kingine chochote ambacho ninaweza kujaribu kukujibu?"
+
+    utter_ask_feedback_reason_sw:
+      - text: "Unaweza kutuambia unazani tunaweza kufanya nini kwa kufanya ikuwe mzuri zaidi"
+
+    utter_ask_first_time_sw:
+      - text: "Je! Hii ni mara ya kwanza kuongea?"
+
+    utter_ask_given_name_sw:
+      - text: "Je! Marafiki wako wanakuita nani"
+      - text: ""
+
+    utter_ask_language_at_home_sw:
+      - text: "luga gani unayazungumza nyumbani"
+
+    utter_ask_language_for_verbal_comms_sw:
+      - text: "Ni mu ile ile luga njo unapendaka * kusikiliza * habari ?\n\n Kama sivyo, unapendelea luga gani"
+
+    utter_ask_language_for_written_comms_sw:
+      - text: ""
+
+    utter_ask_willing_to_do_language_survey_sw:
+      - text: "Uko tayari kuniambia kidogo juu ya luga zenyi unasemaka"
+
+    utter_collect_fallback_sw:
+      - text: "Inaonekana kama mimi nina matatizo. Samahani kwa hiyo. Hebu tuanze tena, namna gani naweza kukusaidia leo?"
+      - text: "Samahani sikusikia vizuri. Tafadhali rudilia ulizo yako kwa namna ingine."
+
+    utter_explain_pandemic_sw:
+      - text: ""
+
+    utter_explain_pandemic2_sw:
+      - text: ""
+
+    utter_explain_pandemic3_sw:
+      - text: ""
+
+    utter_get_back_on_topic_sw:
+      - text: "Minaweza jibu maulizo yoyote kuhusu COVID-19 ao maswali ya kawaida kuhusu afya"
+
+    utter_get_infection_stats_sw:
+      - text: "Hivi sasa kuna watu {active} walioambukizwa katika {country}, mabadiliko kutoka kwa {new} jana, {new_deaths} vitu mbaya za mpya ({total_deaths} jumla)"
+
+    utter_get_informed_consent_sw:
+      - text: "Halo. Asante kwa kuwasiliana na mimi. Jina langu ni <Uji - Ukingo Jibu> Usiwe na wasiwasi, hakuna mtu anayeweza kukutambuwa kutoka kwa maulizo ao maoni yako lakini tunataka ujuwe kama tutakusanya na kuchunguza unachokiandika. Ikiwa tutafanya hivyo, tutaitumikisha kufanya huduma hii ikuwe mzuri zaidi. Tunaahidi kwamba hatuta tumikisha habari yako ya kibinafsi, pamoja na numero yako ya simu, akose kama tu unaturuhusu. Kwa kuendelea na mazungumzo haya, tutajuwa kama unakubali. Asante"
+
+    utter_goodbye_sw:
+      - text: "Asante. Tafadhali tuandikiye tena kama una maswali yoyote"
+
+    utter_greet_with_name_sw:
+      - text: "Halo {given_name_sw}"
+
+    utter_introduce_survey_sw:
+      - text: "Ninazungumza Kifaransa na Kiswahili, lakini ninajifunza kuzungumza zaidi"
+
+    utter_no_local_stats_sw:
+      - text: "Samahani, sina habari ya kawaida - lakini nina takwimu za kitaifa za leo"
+
+    utter_out_of_scope_sw:
+      - text: "Samahani, siyajuwa gisi ya kujibu kwa ile"
+
+    utter_reply_goodbye_sw:
+      - text: "Asante. Tafadhali tuandikiye tena kama una maswali yoyote."
+
+    utter_reply_greeting_sw:
+      - text: "Jambo! Naweza kujibu maswali kuhusu COVID-19 naweza kukusaidia aye leo?"
+
+    utter_reply_thanks_sw:
+      - text: "Asante kwako"
+
+    utter_reply_where_do_you_live_sw:
+      - text: "Mimi ni kompyuta, ninaishi kwenye simu."
+      - text: "Mimi ni kompyuta, ninaishi mawingu"
+
+    utter_set_expectations_sw:
+      - text: "Naweza kujibu maswali kuhusu COVID-19, ungependa kujuwa nini? \n\n Kwa mfano, naweza kukuambia ni watu wangapi wana ugonjwa huo, ao gisi ya kujikinga.\n\nSiyatumika kwa muda mrefu, kwa hivyo tafadhali kuwa na subira nami"
+
+    utter_thanks_for_your_feedback_sw:
+      - text: "Asante kwa kushiriki maoni yako na mimi"
+      - text: "Nashukuru maoni yako"
+
+    utter_welcome_back_sw:
+      - text: "Karibu tena"
+      - text: "Asante kwa kurudi"
+
+    utter_reply_whats_your_name_sw:
+      - text: "Jina langu ni Uji (Ukingo-jibu)"
+
+    utter_reply_to_request_for_french_sw:
+      - text: "Samahani, inaonekana nimeelewa swali kabisa. Je! Unaweza kujaribu tena?"
+
+    utter_reply_to_wrong_answer_sw:
+      - text: "Samahani, tutaandika na kuibadilisha haraka iwezekanavyo."
+
+    utter_share_with_your_friends_sw:
+      - text: "Ili kushiriki na marafiki wako, watumie kiunga hiki: https://t.me/twb_uji_drc_bot"
+
+    utter_ask_location_sw:
+      - text: "Uko wapi?"
+        buttons:
+        - title: "N. Kivu"
+          payload: "kivu_nord"
+        - title: "S. Kivu"
+          payload: "kivu_sud"
+        - title: "Ituri"
+          payload: "ituri"
+        - title: "Nyingine"
+          payload: "other"
+
+    utter_ask_myth_source_sw:
+      - text: "Ikiwa hujanijali kuuliza - ulisikia wapi?"
+        buttons:
+        - title: "Friends & Family"
+          payload: "f_and_f"
+        - title: "Radio"
+          payload: "radio"
+        - title: "WhatsApp"
+          payload: "whatsapp"
+        - title: "Twitter"
+          payload: "twitter"
+
+    utter_ask_preferred_channel_sw:
+      - text: "Je! Unapendaje kupokea habari?"
+        buttons:
+        - title: "Kuzungumza"
+          payload: "in_person"
+        - title: "radio"
+          payload: "radio"
+        - title: "leaflet"
+          payload: "leaflet"
+        - title: "WhatsApp"
+          payload: "WhatsApp"
+        - title: "SMS"
+          payload: "SMS"
+        - title: "Nyingine"
+          payload: "Other"
+
+    utter_ask_feedback_sw:
+      - text: "Tulitumika mzuri"
+        buttons:
+        - title: "Ndio"
+          payload: "/affirm"
+        - title: "Hapana"
+          payload: "/deny"
+
+    utter_answer_covid_anxiety_sw:
+      - text: "Ma halama za ugonjwa ya virusi ya corona (COVID-19) zinakuwaka za kidogo kwa watu wengi, hasa tena kwa vijana na kwa watu wenyi hali nzuri ya afya. Alakini, katika kesi zimoja, inaweza kusababisha ugonjwa ya nguvu: Umoya ku ba tano benyi banaipataka anahitaji matunzo ya hospitali. Kwa hivyo ni kawaida kabisa kwa batu ku ogopa gisi virusi ya corona inaweza kubagonjwesha na bandugu yabo. Kitu ya nguvu yenyi tunaweza kufanya ni kuchukuwa hatua za kujikinga, kukinga bandugu betu na jamii zetu. Kwanza kabisa kati ya hatua hizi ni mara kwa mara kunawa mikono vizuri na kuheshimu hatua za usafi. Ya pili, kufwata habari na ushauri wa mamlaka za baongozi ba afya nyumbani na pamoja na kizuizi yoyote ya usafiri, kutembeya na mikutano. Jifunze zaidi kuhusu gisi ya kujilinda kwa https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+
+    utter_answer_covid_call_a_doctor_sw:
+      - text: "Ikiwa unakohoa, una homa, na ugumu kupumua, tazama daktari haraka - lakini piga simu kituo chako cha afya kwanza kwa simu."
+
+    utter_answer_covid_children_stress_sw:
+      - text: "Mu wakati za magumu, batoto banaweza kujibu mu njia tafauti. Banaweza kuwa na boga ao bisirani. banaweza kuonesha mabadiliko katika tabia zabo, kama vile kukoyola ku kitanda, kutaka kukuwa karibu na wewe ao kusipo sema na kubaki mu fasi yake mwenyewe.   Angaikiya mutoto wako na umuunge mkono, sikiliza tatizo zake na umuoneshe upendo na umuoneshe kama unamuangaikia sana. batoto banakuwaka na hitaji upendo ya bakubwa katika wakati za magumu. Sikiliza batoto na uongeye nabo na unyenyekevu. Ikiwezekana, fanya gisi yote mutoto apate wakati ya kucheza na kufurahi. Heshimia gisi yabo yakukuwa ya kawaida.   Weka batoto karibu na bazazi yabo na familia zabo. Kama kunakuwa separation (kwa mfano, mtu anapashwa enda mu hospitali), hakikisha bakuwe naongeleshana mara kwa mara (ku simu) na hakikisha kama banajisikia biko katika hali ya usalama na banaungwa mkono.  Baambiye ukweli kuhusu bienyi bilipitikana; uwafasiriye  bienyi biko napitikana kwa sasa na uwape habari wazi kuhusu gisi ya kupunguza hatari kwao ya kuambukizwa na ugonjwa kupitia maneno zenyi banaweza sikia kufuatana na miaka zabo. Na pia kuwapa habari kuhusu kinachoweza kutokea mu kuwaunga mkono (kwa mfano, mtu wa familia na / ao mutoto anaweza kuanza kujisikia mugonjwa na anahitaji kuenda hospitalini kwa muda fulani ili madaktari (banganga) bamusaidie apone)."
+
+    utter_answer_covid_disinfect_sw:
+      - text: "Kwa kujikinga na virusi ya corona (COVID-19), inaomba kusafisha vitu, ma fasi, tena sana zenye unagusaka mara kwa mara. Haifee kukunywa ma dawa zakusafisha mikono kama vile mathanoli, ethanoli na maji ya javel. Haziwezi kuuwa virusi yenyi iko ndani ya mwili alakini inasababisha uharibifu wa viungo vya ndani."
+
+    utter_answer_covid_donts_sw:
+      - text: "Hatua zifuatazo HAZIWEZI zuia virusi ya corona (COVID-19) na zinaweza kuumiza sana:  - Sigara  - Kukunywa ma antibiotiki, - Kukunywa methanoli, ethanoli ao zingine ma dawa za kimaji zaku safisha mikono  Usiangaikiye ma habari za bongo. Pata habari kutokea ma fasi za kuaaminika kama vile ministere ya afya ao shirika la afya duniani (OMS). https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+
+    utter_answer_covid_explain_pandemic_sw:
+      - text: "Janga ni la kawaida au la kikanda, janga liko katika nchi nyingi na mikoa kote ulimwenguni."
+
+    utter_answer_covid_gloves_sw:
+      - text: "Kuosha mikono yako kila wakati kunalinda dhidi ya COVID-19 bora kuliko kuvaa glavu za mpira. Virusi zinaweza kuwa kwenye glavu na kuna hatari ya uchafu ikiwa utagusa uso wako na glavu. Kuosha mikono yako ni bora zaidi kuliko kuvaa glavu. Kunawa mikono ni muzuri zaidi kuliko kuvala ma gants."
+
+    utter_answer_covid_hospital_sw:
+      - text: "Wengi mu wagonjwa wa virusi ya corona (COVID-19) (karibu 80%) wanaponaka bila kuenda kubaki hospitalini. Kama uko na kigohozi, homa, na magumu ya kupumua, wasiliana mbio na munganga - alakini ita kwanza kituo chako cha matunzo ku simu."
+
+    utter_answer_covid_how_spread_sw:
+      - text: "Batu banaweza kupata virusi ya corona (COVID-19) kutokea ku bengine benyi biko na virusi. Ugonjwa inaweza kusambarana kutokea ku mtu umoya mbaka ku mwengine kwa njia ya matoni ndogo kutoka pua ao mu kinywa ambayo inaruka wakati mutu mwenye iko na COVID-19 anagohola ao kutosha pumuzi. zile matoni zina ingiya ku bitu na ku mafasi za inje za pembeni ya ule mtu. Kisha batu bengine banapata COVID-19 kwa kugusa bile bitu ao zile ma fasi, kisha banagusa macho zabo, mapua ao kinywa. Batu banaweza pia kupata virusi ya corona (COVID-19) kama banapumua matoni kutokea ku mtu mwenye iko na virusi ya coronaC(OVID-19) mwenye anagohola ao mwenye ana tosha pumuzi yenyi iko amo matoni. Njo maana ni ya lazima kubakiya mbali ya zaidi ya metre moja (fiti 3) na mtu mwenye iko mugonjwa. Shirika la afya duniani (OMS) inaendelea kutafutisha gisi na njia virusi ya corona (COVID-19) inaambukiya na itaendelea kujulisha batu kuhusu matokeo za mupya."
+
+    utter_answer_covid_incubation_sw:
+      - text: "'Kipindi ya incubation' inamaanisha kipindi ya kutoka ku siku ya kuambukizwa mbaka ku siku ye ma halama za ugonjwa zina anza onekana. Kadiri ya iki kipindi kia incubation ya virusi ya corona (COVID-19) ni kati ya siku moja mbaka ku siku kumi na ine, kawaida karibu siku tano."
+
+    utter_answer_covid_infection_likelihood_sw:
+      - text: "hatari inafwatana na kwenye uko - na zaidi tena, kama kuko muripuko ya ugonjwa ya virusi ya corona (COVID-19) inayojitokeza uko. Kwa batu benyi banaishi ao ku tembelea zile maeneo, hatari ya kuambukizwa virusi ya corona (COVID-19) ni ya yulu. Kuwa na uhakika ya kueshimiya sheria yoyote juu ya kusafiri, kutembea ao mikusanyo mikubwa. Ni ya lazima kujuwa hali yenyi uko amo ao hali yenyi unaingiya amo. Kuheshimu mashauri ya serekali itapunguza hatari ya kuambukizwa ao kuambukiza virusi ya corona (COVID-19)."
+
+    utter_answer_covid_infection_sources_sw:
+      - text: "Mwanzo ya kwenye virusi ya corona (COVID-19) ilitokea haiya hakikishwa kabisa. Virusi ya corona (COVID-19) inasambaranaka mu watu kupitia matoni zenyi zinatoka wakati mtu aliyeambukizwa anagohola, anapiga chafya ao anasema. Shirika la afya duniani (OMS) ingali natafutisha aina ingine yenyi virusi ya corona (COVID-19) inaambukiaka na itaendelea kushiriki mafundisho mpya yenyi itatambuwa."
+
+    utter_answer_covid_isolate_sw:
+      - text: "Bamingi kati ya wagonjwa banaonekanaka ako ma halama za magonjwa ma siku 14 baada ya kuambukizwa na virusi. Kwa sababu hii, watu wenyi wanaonekana ako ma halama za ugonjwa ao watu wenyi waliwasiliana na mtu mwenye anaonekana ako ma halama za ugonjwa wanapashwa kutengwa (hii inamaanisha kuwekwa mbali na mwili ya mtu yeyote) kwa siku 14."
+
+    utter_answer_covid_masks_availability_sw:
+      - text: "Uliza katika kituo chako cha afya, ambapo unaweza kupata mask. Vala mask kama unagohola ao kupiga chafya. Kama unavala mask, ni ya lazima kujuwa gisi ya kuitumikisha na gisi ya kuitosha kwa usalama."
+
+    utter_answer_covid_masks_care_sw:
+      - text: "Kwa jumla unapashwa kuvaa mask mara moja tu. Vala mask kama unagohola ao kupiga chafya. Kama unavala mask, ni ya lazima kujuwa gisi ya kuitumikisha na gisi ya kuitosha kwa usalama - Wakati unavala mask, epuka kuigusa, kila wakati ukigusa mask yenyi ilisha tumikishiwa, nawa mikono na alcol ao maji na sabuni - Wakati inalobana, badilisha ayo na ya mpya a usitumikishe tena ile mask kwa sababu ni ya kutumikisha limoya tu - Kwa kutosha mask: inafaa kuitosheya nyuma (usiguse mbele yayo); na kuitupa mara moja ndani ya poubelle ya kufunga; kunawa mikono na alcol ao na maji na sabuni "
+
+    utter_answer_covid_masks_effectiveness_sw:
+      - text: "Masks hutoa kinga fulani na husaidia kuzuia virusi kuenea. Vala mask kama unagohola ao kupiga chafya. Kama unavala mask, ni ya lazima kujuwa gisi ya kuitumikisha na gisi ya kuitosha kwa usalama. "
+
+    utter_answer_covid_masks_how_to_sw:
+      - text: "Vala mask kama unagohola ao kupiga chafya. Kama unavala mask, ni ya lazima kujuwa gisi ya kuitumikisha na gisi ya kuitosha kwa usalama - Mbele ya kuvala mask, kunawa mikono ukitumia dawa ya kusafisha mikono (alcol) ao maji na sabuni - Vala mask ku namna ya kufunika pua na kinywa nauitiye mu katikati ya sura yako - Wakati unavala mask, epuka kuigusa, kila wakati ukigusa mask yenyi ilisha tumikishiwa, nawa mikono na alcol ao maji na sabuni - Wakati inalobana, badilisha ayo na ya mpya a usitumikishe tena ile mask kwa sababu ni ya kutumikisha limoya tu - Kwa kutosha mask: inafaa kuitosheya nyuma (usiguse mbele yayo); na kuitupa mara moja ndani ya poubelle ya kufunga; kunawa mikono na alcol ao na maji na sabuni  https://www.youtube.com/watch?v=KuT1KNfJIjc"
+
+    utter_answer_covid_risk_most_at_risk_sw:
+      - text: "Batu bote biko katika hatari ya kugonjwa sana na COVID-19. Bazee na batu benyi biko na magonjwa za kukawiya (kama vile tension, magonjwa ya moyo, magonjwa ya mafafa, sukari ao cancer) banaonekana kukuwa katika hatari zaidi ya kupata ma halama za ugonjwa za nguvu. Mutu yoyote anaweza kuambukizwa na virusi ya corona (COVID-19) na kugonjwa sana. Batu ba miaka zote benyi banaonekana ako homa na/  ao kigohoziyenyi inafuatana na magumu ya kupumua/ kupoteza pumzi, maumivu/ maumivu ku kifua ao kusipojuwa kusema tena wala magumu ya kutembea banapashwa wasiliana na munganga mara moja."
+
+    utter_answer_covid_risk_for_children_sw:
+      - text: "Batoto nabo biko katika hatari ya kuambukikzwa na virusi. Bazee na batu benyi biko na magonjwa za kukawiya (kama vile tension, magonjwa ya moyo, magonjwa ya mafafa, sukari ao cancer) banaonekana kukuwa katika hatari zaidi ya kupata ma halama za ugonjwa za nguvu. Mutu yoyote anaweza kuambukizwa na virusi ya corona (COVID-19) na kugonjwa sana. Batu ba miaka zote benyi banaonekana ako homa na/  ao kigohoziyenyi inafuatana na magumu ya kupumua/ kupoteza pumzi, maumivu/ maumivu ku kifua ao kusipojuwa kusema tena wala magumu ya kutembea banapashwa wasiliana na munganga mara moja."
+
+    utter_answer_covid_risk_for_old_people_sw:
+      - text: "Bazee na batu benyi biko na magonjwa za kukawiya (kama vile tension, magonjwa ya moyo, magonjwa ya mafafa, sukari ao cancer) banaonekana kukuwa katika hatari zaidi ya kupata ma halama za ugonjwa za nguvu. Mutu yoyote anaweza kuambukizwa na virusi ya corona (COVID-19) na kugonjwa sana. Batu ba miaka zote benyi banaonekana ako homa na/  ao kigohoziyenyi inafuatana na magumu ya kupumua/ kupoteza pumzi, maumivu/ maumivu ku kifua ao kusipojuwa kusema tena wala magumu ya kutembea banapashwa wasiliana na munganga mara moja."
+
+    utter_answer_covid_risk_with_preexisting_sw:
+      - text: "Benyi biko na magonjwa za kukawiya (kama vile tension, magonjwa ya moyo, magonjwa ya mafafa, sukari ao cancer) banaonekana kukuwa katika hatari zaidi ya kupata ma halama za ugonjwa za nguvu. Mutu yoyote anaweza kuambukizwa na virusi ya corona (COVID-19) na kugonjwa sana. Batu ba miaka zote benyi banaonekana ako homa na/  ao kigohoziyenyi inafuatana na magumu ya kupumua/ kupoteza pumzi, maumivu/ maumivu ku kifua ao kusipojuwa kusema tena wala magumu ya kutembea banapashwa wasiliana na munganga mara moja."
+
+    utter_answer_covid_myth_alcohol_chlorine_sw:
+      - text: "Kupulizia dawa ya kimaji ya kuuwa uchafu (alcool), klorini ao zingine madawa za usafi ku mwili ao kuziingiza mu ndani ya mwili haiwezi zuia virusi ya corona (COVID-19) na inaweza kuwa hatari."
+
+    utter_answer_covid_myth_antibiotics_sw:
+      - text: "Dawa ya kuuwa vidudu mwilini (antibiotiki) hayizuwiye virusi, inauwa tu vidudu mwilini"
+
+    utter_answer_covid_myth_cold_kills_sw:
+      - text: "Baridi na neige habiwezi uwa virusi ya corona."
+
+    utter_answer_covid_myth_drink_sw:
+      - text: "Kukunywa alcool ya methanoli ao ya ethanoli ao dawa zingine zaku safisha mikono HAIWEZI zuia ao kuponesha virusi ya corona (COVID-19) na inaweza kuwa hatari sana"
+
+    utter_answer_covid_myth_drink_alcohol_sw:
+      - text: "Kukunywa pombe haiwezi zuia virusi ya corona (COVID-19) na inaweza kuwa hatari."
+
+    utter_answer_covid_myth_flies_sw:
+      - text: "Akuna habari yoyote yenyi inaonesha kama inzi za nyumbani zinaweza ambukiza virusi ya corona (COVID-19). Virusi inaambukia kupitia matoni zenyi mtu aliyeambukizwa anatoshaka wakati anagohola, wakati anapiga chafya ao wakati anasema."
+
+    utter_answer_covid_myth_fruits_sw:
+      - text: "Kukula matunda ni mzuri kwa afya, alakini haiezi kuzuia ao kuponesha virusi ya corona (COVID-19)."
+
+    utter_answer_covid_myth_garlic_sw:
+      - text: "Ayi ni ya lazima ku afya alakini akuna uhakikisho ya kutoka ku iyi magonjwa ya sasa kama kukula ayi inakinga watu na virusi ya corona."
+
+    utter_answer_covid_myth_hand_dryers_sw:
+      - text: "Chombo ya kukausha mikono haiwezi uwa virusi ya corona"
+
+    utter_answer_covid_myth_heat_kills_sw:
+      - text: "Virusi ya corona (COVID-19) inaweza kuambukizwa katika maeneo yenye hali ya hewa ya joto na ya baridi. Kuingia ku jua ao ku joto kali haiwezi zuia kupata ugonjwa ya virusi ya corona (COVID-19)."
+
+    utter_answer_covid_myth_hold_breath_sw:
+      - text: "Kuweza kufunga pumzi seconde kumi wala zaidi bila kugohola wala kujisikia mubaya HAIMAANISHE kama mtu hana wala hawezi kupata virusi ya corona (COVID-19) wala magonjwa ingine yoyote ya mafafa "
+
+    utter_answer_covid_myth_hot_bath_sw:
+      - text: "Kunawa na maji ya moto haiwezi zuia virusi ya corona"
+
+    utter_answer_covid_myth_mosquitos_sw:
+      - text: "Virusi ya corona haiwezi kuambukizwa kupitia imbu."
+
+    utter_answer_covid_myth_only_old_sw:
+      - text: "Batu ba miaka zote banaweza kuambukizwa na virusi ya corona. bazee, na batu benyi biko na magonjwa za kukawiya (kama vile asme, sukari, ugonjwa wa moyo) banaonekana kukuwa katika hatari zaidi ya kushambuliwa na virusi."
+
+    utter_answer_covid_myth_other_vaccines_sw:
+      - text: "Chanjo za kupiganisha ugonjwa ya mafafa haikinge na virusi ya corona."
+
+    utter_answer_covid_myth_phone_signals_sw:
+      - text: "Ma virusi hazitembeyake kupitia ma ondes za redio ao kupitia reseau ya simu."
+
+    utter_answer_covid_myth_saline_rinse_sw:
+      - text: "Akuna ushuhuda kama mara kwa mara kusafisha pua na serumu inakinga watu kuambukizwa na coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_spices_sw:
+      - text: "Kuongeza pilipili ndani ya supu yako ao ndani ya sahani ingine ya chakula haiwezi kuzuia ao kuponesha virusi ya corona (COVID-19)."
+
+    utter_answer_covid_myth_steam_sw:
+      - text: "Kupumua hewa ya moto haiwezi kuponesha ao kuzuia virusi ya corona (COVID-19). Kupumua hewa ya moto sana ni hatari"
+
+    utter_answer_covid_myth_thermal_scanners_sw:
+      - text: "Chombo ya kupima homa (thermo flash) inaweza chunguza kama batu biko na homa alakini haiwezi chunguza kama ndio ao apana mtu iko na virusi ya corona."
+
+    utter_answer_covid_myth_traditional_medicine_sw:
+      - text: "Hakuna matunzo yoyote ya asili inayojulikana yenyi inatunza ao yenye inazuia maambukizi ya virusi ya corona. Ulinzi bora ni kufuata hatua za kujikinga na kuripoti mapema ikiwa halama za magonjwa zinaonekana."
+
+    utter_answer_covid_myth_UV_sw:
+      - text: "Mwangaza ya ultraviolet haipashwe kutumikishiwa kwa kusukula viombo kwa sababu inaweza tuma ngozi inawasha"
+
+    utter_answer_covid_myths_summary_sw:
+      - text: "Kuko habari za mingi za bongo kuhusu virusi ya corona (COVID-19).  Hizi ni ukweli.  - Bamingi mu benyi biko na ugonjwa ya virusi ya corona banaweza pona na kumaliza corona mu mwili zabo. - Batu bamoya banaweza kuwa na aina mbaya zaidi ya ile ugonjwa, kama vile ugonjwa ya mafafa. Bengine, hata bameambukizwa, banaonekanaka ako tu bu ma halama budogo. - Batu ba miaka zote banaweza kuambukizwa na virusi ya corona. Bazee na batu benyi biko na magonjwa ya kukawiya (kama vile asme, sukari, ugonjwa wa moyo) banaonekana kukuwa katika hatari zaidi ya kukuwa bagonjwa sana na virusi. - Mpaka ivi, AKUNA dawa kanuni iliopendekezwa kwa kuzuia ao kutunza virusi ya corona. Bamingi mu bagonjwa banaponaka na matunzo ya msingi. - Kukunywa methanoli, ethanoli ao zingine madawa za kimaji za kusafisha mikono HAITA zuia ao kuponesha virusi ya corona na inaweza kuwa hatari sana. Angalia ukweli kwenye site ya internet ya shirika la afya duniani (OMS):  https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+
+    utter_answer_covid_on_surfaces_sw:
+      - text: "Hakuna uhakikisho kuhusu muda yenyi virusi yenyi inaleta corona (COVID-19) inachukua kuishi mu ma fasi za inje, alakini inaonekana kama inafanana virusi zingine za corona. Masomo inaonesha kama virusi ya corona (pamoja na habari za kwanza kuhusu COVID-19) inaweza kuishi mu ma fasi za inje kwa ma saa kidogo ao mbaka ku ma siku za mingi. Hii inaweza kutafautiana kufuatana na hali tafauti (kwa mfano aina ya fasi, hali ya fasi ao mazingira). Kama unawazia kuwa fasi inaweza kuwa ilisah ambukizwa, safisha ako na dawa ya maji ya kusukula buchafu (desinfectant) ya kawaida kwa kuuwa virusi, kwa kujikinga na kukinga wengine. Nawa mikono yako na dawa ya alcol ao nawa na maji na sabuni. Epuka kugusa macho, kinywa, ao pua yako."
+
+    utter_answer_covid_protection_sw:
+      - text: "'Fuata izi hatua kwa kujikinga na kwa kukinga familia yako ku virusi ya corona (COVID-19): - Nawa mikona mara kwa mara (kwa seconde makumi mbili 20) ukitumia alcol ao maji na sabuni. Iyi inauwa ma virusi zenyi zinaweza kuwa mu mikona yako. -Kuwa mbali ku metre moja ao zaidi na mtu yeyote mwenye anagohola ao mwenye anapiga chafya. Wakati mtu anagohola ao kupiga chafya, anapitisha bu matoni budogo budogo kupitia pua ao kinywa na bule bu matoni bunaweza kuwa amo virusi. Epuka kujigusa macho, pua na kinywa. Mikono zinagusaka ma fasi za mingi na zinaweza leta virusi mu mwili yako wakati unajigusa macho, pua ao kinywa. -Funika kinywa yako na pua ukutumia mkunjo ya ndani ya konongo yako ao kitambala wakati unagohola ao kupiga chafya. Tupa mara moja ile kitambala yenyi umetumikisha. Matoni ya kupiga chafya ao ya kigohozi zinaweza sambariza virusi. -Baki nyumbani kama haujisikie vizuri. Kama uko na homa, kigohozi na magumu ya kupumua , wasiliana na munganga na umuite mbele. Fuata mashauri za viongozi wa afya ya nyumbani."
+
+    utter_answer_covid_protection_wash_hands_sw:
+      - text: "Fuata izi hatua kwa kujikinga na kwa kukinga familia yako ku virusi ya corona (COVID-19): - Nawa mikona mara kwa mara (kwa seconde makumi mbili 20) ukitumia alcol ao maji na sabuni. Iyi inauwa ma virusi zenyi zinaweza kuwa mu mikona yako.   "
+
+    utter_answer_covid_protection_keep_distance_sw:
+      - text: "-Kuwa mbali ku metre moja ao zaidi na mtu yeyote mwenye anagohola ao mwenye anapiga chafya. Wakati mtu anagohola ao kupiga chafya, anapitisha bu matoni budogo budogo kupitia pua ao kinywa na bule bu matoni bunaweza kuwa amo virusi. Epuka kujigusa macho, pua na kinywa. Mikono zinagusaka ma fasi za mingi na zinaweza leta virusi mu mwili yako wakati unajigusa macho, pua ao kinywa."
+
+    utter_answer_covid_protection_cover_mouth_nose_sw:
+      - text: "-Funika kinywa yako na pua ukutumia mkunjo ya ndani ya konongo yako ao kitambala wakati unagohola ao kupiga chafya. Tupa mara moja ile kitambala yenyi umetumikisha. Matoni ya kupiga chafya ao ya kigohozi zinaweza sambariza virusi."
+
+    utter_answer_covid_protection_stay_at_home_sw:
+      - text: "-Baki nyumbani kama haujisikie vizuri. Kama uko na homa, kigohozi na magumu ya kupumua , wasiliana na munganga na umuite mbele. Fuata mashauri za viongozi wa afya ya nyumbani."
+
+    utter_answer_covid_SARS_sw:
+      - text: "Magonjwa ya magumu kali ya kupumua (SARS) inatokea mu familia moja na virusi ya corona ya sasa (COVID-19) na zote mbili zinaweza sababisha magonjwa ya kupumua. Alakini ni magonjwa mbili tafauti. Hakuyakuwaka tena ingine muripuko wa SARS popote duniani tangu mwaka wa 2003."
+
+    utter_answer_covid_stay_at_home_sw:
+      - text: "Ikiwa serekali yako ya nyumbani ilikushauria kubaki unajitenga, jilinde na ubaki nyumbani. Hata kama uko katika hali ya muzuri ya afya, toka tu kwa mahitaji za msingi za familia yako mukuheshimu hatua zilizopendekezwa na viongozi wa kiafya kwa kupunguza hatari ya kuambukizwa ao kusambariza COVID-19. Kama uko na ma halama za ugonjwa ao umesogeleana na mtu mwenye iko na ma halama za ugonjwa, baki nyumbani kwa siku 14. Unaweza pigia daktari simu ao kliniki kwa ushauri wa matunzo. "
+
+    utter_answer_covid_stress_sw:
+      - text: "Ni kawaida kusikia huzuni, wasiwasi, kuchanganyikiwa, boga ao kisirani wakati ya magumu. Kuzungumza na batu benye unaamini inaweza ku kusaidia. Wasiliana na marafiki zako na familia yako.  Kama ni lazima kukaa nyumbani, angaikiya afya yako, inamaanisha malisho ya muzuri, kulala, mazoezi ya mwili na mawasiliano na jamii na wapendwa wako wa nyumbani ao ku internet (mtandao) ao kwa simu pamoja na familia na marafiki. Usitafute kupoteza mawazo yako mu kuvuta sigara, mu kukunywa pombe ao ma dawa zingine za ulevi. Ukijisikiya una ishiwa, zungumza na mufanya kazi wa kiafya ao mushauri. Kuwa tayari, juwa kwa kuenda na gisi ya kutafuta msaada kwa mahitaji ya afya ya mwili na akili ikihitajika.  Tafuta habari. Kukusanya taarifa zitakazo kusaidia kuamua kwa uhakikisho hatari ili uweze kuchukua mipango. Tafuta fasi ya kuaminika kwenye unaweza pata habari za kutegemea, kama vile site ya internet ya Shirika la afya duniani (OMS) ao, shirika ya nyumbani ao ya kitaifa ya afya ya batu bote."
+
+    utter_answer_covid_symptoms_sw:
+      - text: "Halama mara nyingi za virusi ya corona (COVID-19) ni homa, kigohozi ya kuwasha ku shingo na mchoko. Zingine ma halama zenyi hazizoweyake kuwa zinaweza kuoneka kwa watu wengine kama vile maumivu wa mwili, kufungana mapua, maumivu ya kichwa, maumivu ya shingo, kuhara, kupoteza onjo ao harufu, mwili kuwasha ao makucha ya ku mikono ao ku migulu kupoteza rangi. Watu wamoja wanaeza kuonekana ako ugonjwa sana, kama vile magonjwa ya mafafa. Bengine hata bamesha ambukizwa banaonekana tu ako bu ma halama bu dogo sana. Kama uko na kigohozi, homa na magumu ya kupumua, wasiliana mbio na munganga - alakini uanze kwanza ku ita kituo chako cha matunzo ku simu."
+
+    utter_answer_covid_travel_advice_sw:
+      - text: " Ni mzuri kwa wasafiri wagonjwa kuchelewesha ao kujikatalia kusafiri mu maeneo zenyi zinaguswa, hasa tena sana kwa wasafiri wazee na watu walio na magonjwa za miaka mingi wala hali mbaya ya afya.    Mashauri ya jumla ya wasafiri wote ni zifuatazo: - Nawa mikono mara kwa mara - Epuka kujigusa macho, kinywa na pua - Funika kinywa na pua yako ukitumia ndani ya mkunjo ya konongo yako ao ukitumia kitambala wakati unagohola ao kupiga chafya - Baki mbali ya zaidi ya metre moja na mgonjwa   Wasafiri wanaorudi kutoka mu maeneo zinazoguswa wanapashwa:  - Kuchunguza ma halama kwa siku kumi na ine na kufuata sheria za kitaifa za inchi. - Kukikuwa ma halama kama vile homa, kigohozi ao magumu ya kupumua, wasafiri wanashauriwa kuwasiliana na watoa huduma ya afya ya nyumbani, ya mzuri ni kupitia simu, na kuwajulisha halama zao na maeneo kwenyi walisafiri."
+
+    utter_answer_covid_treatments_sw:
+      - text: "Mbaka ivi, hakuna chanjo ao dawa ya kipekee iliyotolewa kwa kuzuia ao kutunza coronavirus (COVID-19). Ma chanjo na matunzo zimoya zingali na pimiwa. Haupashwe jipatiya ma dawa kama vile ma antibiotiki. Alakini batu benyi bana husika banapashwa pata matunzo ju ya kupunguza ma halama zabo za ugonjwa, Watu wenyi wamepigwa sana na magonjwa wanapashwa enda baki hospitalini. Wagonjwa wengi wanaponaka kupitia matunzo ya kawaida. Mtu anaweza pona ugonjwa ya virusi ya corona (COVID-19). Kupata ile virusi HAIMAANISHE kama mtu atakuwa nayo maisha yote. kama uko na kigohozi, homa na magumu ya kupumua, wasiliana na munganga mara moja - alakini ita kwanza kituo chako cha matunzo mbele kwenye simu."
+
+    utter_answer_covid_wash_hands_frequency_sw:
+      - text: "You should wash your hands regularly with alcoholic gel or soap and water."
+
+    utter_answer_covid_wash_hands_how_sw:
+      - text: "You should wash your hands with clean water and soap, for at least 20 seconds. If you have no access to soap and water use hand sanitizer."
+
+    utter_answer_covid_what_is_corona_covid-19_sw:
+      - text: "Virusi ya corona ni familia kubwa ya virusi ambayo inaweza kutokeza ugonjwa kwa ma nyama ao binadamu. Kwa binadamu, virusi za corona zinajulikana kusababisha maambukizi ya viungo vya kupumua kuanzia ku mafua mbaka ku magonjwa kali zaidi. Virusi ya corona yenyi iligunduliwa apa mwisho mwisho inaleta ugonjwa ya virusi ya corona (COVID-19). COVID-19 ni ugonjwa ya kuambukia yenyi inaletwa na virusi ya corona yenyi ilitambuliwa izi masiku."
+
+    utter_answer_covid_why_distancing_sw:
+      - text: "Kuwa mbali ku metre moja ao zaidi na mtu yeyote mwenye anagohola ao mwenye anapiga chafya. Wakati mtu anagohola ao kupiga chafya, anapitisha bu matoni budogo budogo kupitia pua ao kinywa na bule bu matoni bunaweza kuwa amo virusi. Epuka kujigusa macho, pua na kinywa. Mikono zinagusaka ma fasi za mingi na zinaweza leta virusi mu mwili yako wakati unajigusa macho, pua ao kinywa. "
 
 session_config:
   session_expiration_time: 60
