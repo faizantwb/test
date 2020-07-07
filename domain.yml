@@ -1,396 +1,921 @@
 intents:
-- covid_myth_cure
-- covid_myth_antibiotics
-- covid_myth_garlic
-- covid_myth_saline_rinse
-- covid_myth_other_vaccines
-- covid_myth_alcohol_chlorine
-- covid_myth_thermal_scanners
-- covid_myth_UV
-- covid_myth_hand_dryers
-- covid_myth_hot_bath
-- covid_myth_pets
-- covid_myth_mosquitos
-- covid_myth_heat_kills
-- covid_myth_cold_kills
-- covid_myth_only_old
-- covid_children_stress
-- covid_stress
-- covid_donate
-- covid_travel_advice
-- covid_myths_summary
-- covid_donts
-- covid_on_surfaces
-- covid_infection_sources
-- covid_incubation
-- covid_masks
-- covid_SARS
-- covid_treatments
-- covid_most_at_risk
-- covid_anxiety
-- covid_infection_likelihood
-- covid_protection
-- covid_how_spread
-- covid_what_is_corona_covid-19
-- covid_symptoms
-- wash_hands_how
-- wash_hands_frequency
-- fallback
-- goodbye
-- greet
-- affirm
-- deny
-- out_of_scope
-- get_contact_details
-- get_feedback
-- ask_for_stats
-- ask_four_language_questions
-- covid_explain_pandemic
-- ask_again
-- name_entry
+
+- affirm_fra
+- answer_is_wrong_fra
+- ask_for_local_stats_fra
+- ask_for_stats_fra
+- ask_language_questions_fra
+- covid_anxiety_fra
+- covid_call_a_doctor_fra
+- covid_children_stress_fra
+- covid_disinfect_fra
+- covid_donts_fra
+- covid_explain_pandemic_fra
+- covid_gloves_fra
+- covid_hospital_fra
+- covid_how_spread_fra
+- covid_incubation_fra
+- covid_infection_likelihood_fra
+- covid_infection_sources_fra
+- covid_isolate_fra
+- covid_masks_availability_fra
+- covid_masks_care_fra
+- covid_masks_effectiveness_fra
+- covid_masks_how_to_fra
+- covid_myth_alcohol_chlorine_fra
+- covid_myth_antibiotics_fra
+- covid_myth_cold_kills_fra
+- covid_myth_drink_fra
+- covid_myth_drink_alcohol_fra
+- covid_myth_flies_fra
+- covid_myth_fruits_fra
+- covid_myth_garlic_fra
+- covid_myth_hand_dryers_fra
+- covid_myth_heat_kills_fra
+- covid_myth_hold_breath_fra
+- covid_myth_hot_bath_fra
+- covid_myth_mosquitos_fra
+- covid_myth_only_old_fra
+- covid_myth_other_vaccines_fra
+- covid_myth_phone_signals_fra
+- covid_myth_saline_rinse_fra
+- covid_myth_spices_fra
+- covid_myth_steam_fra
+- covid_myth_thermal_scanners_fra
+- covid_myth_traditional_medicine_fra
+- covid_myth_UV_fra
+- covid_myths_summary_fra
+- covid_on_surfaces_fra
+- covid_protection_fra
+- covid_protection_wash_hands_fra
+- covid_protection_keep_distance_fra
+- covid_protection_cover_mouth_nose_fra
+- covid_protection_stay_at_home_fra
+- covid_risk_for_children_fra
+- covid_risk_for_old_people_fra
+- covid_risk_with_preexisting_fra
+- covid_risk_most_at_risk_fra
+- covid_SARS_fra
+- covid_stay_at_home_fra
+- covid_stress_fra
+- covid_symptoms_fra
+- covid_travel_advice_fra
+- covid_treatments_fra
+- covid_wash_hands_frequency_fra
+- covid_wash_hands_how_fra
+- covid_what_is_corona_covid-19_fra
+- covid_why_distancing_fra
+- deny_fra
+- goodbye_fra
+- greet_fra
+- out_of_scope_fra
+- request_for_french_fra
+- share_with_your_friends_fra
+- user_says_thanks_fra
+- want_to_give_feedback_fra
+- whats_your_name_fra
+- where_do_you_live_fra
+- covid_myth_hot_tea_fra
+- unknown_myths_fra
+- affirm_lin
+- answer_is_wrong_lin
+- ask_for_local_stats_lin
+- ask_for_stats_lin
+- ask_language_questions_lin
+- covid_anxiety_lin
+- covid_call_a_doctor_lin
+- covid_children_stress_lin
+- covid_disinfect_lin
+- covid_donts_lin
+- covid_explain_pandemic_lin
+- covid_gloves_lin
+- covid_hospital_lin
+- covid_how_spread_lin
+- covid_incubation_lin
+- covid_infection_likelihood_lin
+- covid_infection_sources_lin
+- covid_isolate_lin
+- covid_masks_availability_lin
+- covid_masks_care_lin
+- covid_masks_effectiveness_lin
+- covid_masks_how_to_lin
+- covid_myth_alcohol_chlorine_lin
+- covid_myth_antibiotics_lin
+- covid_myth_cold_kills_lin
+- covid_myth_drink_lin
+- covid_myth_drink_alcohol_lin
+- covid_myth_flies_lin
+- covid_myth_fruits_lin
+- covid_myth_garlic_lin
+- covid_myth_hand_dryers_lin
+- covid_myth_heat_kills_lin
+- covid_myth_hold_breath_lin
+- covid_myth_hot_bath_lin
+- covid_myth_mosquitos_lin
+- covid_myth_only_old_lin
+- covid_myth_other_vaccines_lin
+- covid_myth_phone_signals_lin
+- covid_myth_saline_rinse_lin
+- covid_myth_spices_lin
+- covid_myth_steam_lin
+- covid_myth_thermal_scanners_lin
+- covid_myth_traditional_medicine_lin
+- covid_myth_UV_lin
+- covid_myths_summary_lin
+- covid_on_surfaces_lin
+- covid_protection_lin
+- covid_protection_wash_hands_lin
+- covid_protection_keep_distance_lin
+- covid_protection_cover_mouth_nose_lin
+- covid_protection_stay_at_home_lin
+- covid_risk_for_children_lin
+- covid_risk_for_old_people_lin
+- covid_risk_with_preexisting_lin
+- covid_risk_most_at_risk_lin
+- covid_SARS_lin
+- covid_stay_at_home_lin
+- covid_stress_lin
+- covid_symptoms_lin
+- covid_travel_advice_lin
+- covid_treatments_lin
+- covid_wash_hands_frequency_lin
+- covid_wash_hands_how_lin
+- covid_what_is_corona_covid-19_lin
+- covid_why_distancing_lin
+- deny_lin
+- goodbye_lin
+- greet_lin
+- out_of_scope_lin
+- request_for_french_lin
+- share_with_your_friends_lin
+- user_says_thanks_lin
+- want_to_give_feedback_lin
+- whats_your_name_lin
+- where_do_you_live_lin
+- covid_myth_hot_tea_lin
+- unknown_myths_lin
 
 forms:
-  - first_time_form
-  - contact_details_form
-  - feedback_form
-  - language_questions_form
-  - myth_source_form
+  - form_first_time_fra
+  - form_contact_details_fra
+  - form_feedback_fra
+  - form_language_questions_fra
+  - form_myth_source_fra
+  - form_first_time_lin
+  - form_contact_details_lin
+  - form_feedback_lin
+  - form_language_questions_lin
+  - form_myth_source_lin
 
 actions:
-  - action_get_infection_stats
-  - action_get_contact_details
-  - action_get_feedback
-  - action_get_language_questions
-  - action_link_to_pandemic_video
-  - utter_thats_fine
-
-entities:
-  - entity_given_name
+  - action_get_infection_stats_fra
+  - action_get_contact_details_fra
+  - action_get_feedback_fra
+  - action_get_language_questions_fra
+  - action_link_to_pandemic_video_fra
+  - action_ask_anything_else_fra
+  - action_get_infection_stats_lin
+  - action_get_contact_details_lin
+  - action_get_feedback_lin
+  - action_get_language_questions_lin
+  - action_link_to_pandemic_video_lin
+  - action_ask_anything_else_lin
 
 slots:
-  first_time:
+  first_time_fra:
     type: unfeaturized
-  given_name:
+  given_name_fra:
     type: unfeaturized
-  location:
+  location_fra:
     type: unfeaturized
-  myth_source:
+  myth_source_fra:
     type: unfeaturized
-  willing_to_do_language_survey:
+  willing_to_do_language_survey_fra:
     type: unfeaturized
-  language_at_home:
+  language_at_home_fra:
     type: unfeaturized
-  language_for_written_comms:
+  language_for_written_comms_fra:
     type: unfeaturized
-  language_for_verbal_comms:
+  language_for_verbal_comms_fra:
     type: unfeaturized
-  preferred_channel:
+  preferred_channel_fra:
     type: unfeaturized
-  feedback:
+  feedback_fra:
     type: unfeaturized
-  feedback_reason:
+  feedback_reason_fra:
     type: unfeaturized
-  requested_slot:
+  requested_slot_fra:
     type: unfeaturized
-  country:
+  country_fra:
     type: text
-  container:
+  container_fra:
     type: text
-  issue_type:
+  issue_type_fra:
     type: unfeaturized
-  issue_detail:
+  issue_detail_fra:
     type: unfeaturized
-  name:
+  name_fra:
+    type: unfeaturized
+  first_time_lin:
+    type: unfeaturized
+  given_name_lin:
+    type: unfeaturized
+  location_lin:
+    type: unfeaturized
+  myth_source_lin:
+    type: unfeaturized
+  willing_to_do_language_survey_lin:
+    type: unfeaturized
+  language_at_home_lin:
+    type: unfeaturized
+  language_for_written_comms_lin:
+    type: unfeaturized
+  language_for_verbal_comms_lin:
+    type: unfeaturized
+  preferred_channel_lin:
+    type: unfeaturized
+  feedback_lin:
+    type: unfeaturized
+  feedback_reason_lin:
+    type: unfeaturized
+  requested_slot_lin:
+    type: unfeaturized
+  country_lin:
+    type: text
+  container_lin:
+    type: text
+  issue_type_lin:
+    type: unfeaturized
+  issue_detail_lin:
+    type: unfeaturized
+  name_lin:
     type: unfeaturized
 
 responses:
 
-    utter_ask_first_time:
-    - text: "Is this the first time we have chatted?"
-
-    utter_ask_given_name:
-    - text: "What do your friends call you?"
-
-    utter_we_have_what_we_need:
-    - text: "great! We have what we need"
-
-    utter_your_first_name:
-    - text: "Yes, your first name"
-
-    utter_thats_fine:
-    - text: "OK, that’s fine"
-
-    utter_ask_location:
-    - text: "Where are you?"
-      buttons:
-      - title: "N. Kivu"
-        payload: "kivu_nord"
-      - title: "S. Kivu"
-        payload: "kivu_sud"
-      - title: "Ituri"
-        payload: "ituri"
-      - title: "Other"
-        payload: "other"
-
-    utter_welcome_back:
-    - text: "Welcome back!"
-
-    utter_ask_willing_to_do_language_survey:
-    - text: "Would you be willing to tell me a bit about the languages you speak?"
-
-    utter_ask_myth_source:
-    - text: "If you don't mind me asking - where did you hear that?"
-      buttons:
-      - title: "Friends & Family"
-        payload: "friends_and_family"
-      - title: "Radio"
-        payload: "radio"
-      - title: "WhatsApp"
-        payload: "whatsapp"
-      - title: "Twitter"
-        payload: "twitter"
-
-    utter_ask_language_at_home:
-    - text: "What language you mainly speak at home?"
-
-    utter_ask_language_for_written_comms:
-    - text: "Which language do you prefer to *read* information in?"
-
-    utter_ask_language_for_verbal_comms:
-    - text: "And is that the same language you like to *listen* to information in?\n\n If not, which language do you prefer?"
-
-    utter_ask_preferred_channel:
-    - text: "How do you prefer to receive information?"
-      buttons:
-      - title: "talking to people"
-        payload: "in_person"
-      - title: "radio"
-        payload: "radio"
-      - title: "leaflet"
-        payload: "leaflet"
-      - title: "WhatsApp"
-        payload: "WhatsApp"
-      - title: "SMS"
-        payload: "SMS"
-      - title: "Other"
-        payload: "other"
-
-    utter_ask_feedback:
-    - text: "Did we do ok?"
-      buttons:
-      - title: "Yes"
-        payload: "/affirm"
-      - title: "No"
-        payload: "/deny"
-
-    utter_infection_stats:
-    - text: "There are currently {active} people infected in {country}, a change of {new} on yesterday."
-
-    utter_ask_feedback_reason:
-    - text: "Could you tell us what you think we could better?"
-
-    utter_ask_name:
-    - text: "What's your name?"
-
-    utter_ask_mail:
-    - text: "What's your email address?"
-
-    utter_greet:
-    - text: "Hey! It's nice to talk to you."
-    - text: "Hi. Hope you're having a good day."
-
-    utter_greet_with_name:
-    - text: "Hi {given_name}!"
-    - text: "Hey {given_name}, how's your day going?"
-
-    utter_get_informed_consent:
-    - text: "
-            Hi. Thanks for getting in touch. My name is <~~bot_name~~ Uji> Don’t worry, no one can identify
-            you from your questions or comments however we want you to know that we
-            will collect and analyze what you type. If we do, we we’ll use it to make this service
-            better. We promise that we’ll **NEVER** use your personal information,
-            including your phone number, unless you tell us that we can.
-            By carrying on this conversation, we will assume that you agree. Thank you
-            "
+    utter_anything_else_fra:
+      - text: "Autre chose que je peux essayer de répondre pour vous?"
 
-    utter_set_expectations:
-    - text: "
-            I can answer questions about COVID-19, what would you like to know?
-            \n\nFor instance, I can tell you how many people have the disease, or how to keep yourself safe.
-            \n\nI haven't been doing this long, so please be patient with me!
-            "
-    - text: "
-            I can answer questions about COVID-19, what would you like to know?
-            \n\nFor instance, I can tell you how many people have the disease, or how to keep yourself safe.
-            "
+    utter_ask_anything_else_fra:
+      - text: "Autre chose que je peux essayer de répondre pour vous?"
 
-    utter_introduce_survey:
-    - text: "
-            I speak French and Swahili, but I'm learning to speak more. \n\n
-            I'd like to ask you a few questions about the languages you know...
-            "
+    utter_ask_feedback_reason_fra:
+      - text: "Pourriez-vous nous dire ce que vous pensez que nous pourrions améliorer"
 
-  # utter_cheer_up:
-  # - text: "Here is something to cheer you up:"
-  #   image: "https://i.imgur.com/nGF1K8f.jpg"
-  #
-    utter_explain_pandemic:
-    - text: "An epidemic is local or regional, a pandemic is in multiple countries and regions across the world."
+    utter_ask_first_time_fra:
+      - text: "Est-ce la première fois que nous discutons"
 
-    utter_explain_pandemic2:
-    - text: "Here's something to explain the differences"
-      image: "https://cdn.technologynetworks.com/tn/images/body/endemicvsepidemicimage41568108070133.png"
+    utter_ask_given_name_fra:
+      - text: "Quel nom voulez-vous que je vous appelle"
+      - text: "Comment tes amis t'appellent-ils"
 
-    utter_explain_pandemic3:
-    - text: "Here's something to explain the differences"
-      custom:
-        attachment:
-          type: video
-          payload:
-            title: "My video"
-            src: "https://www.youtube.com/watch?v=nMelwUuGqpA"
+    utter_ask_language_at_home_fra:
+      - text: "Quelle langue parlez-vous principalement à la maison"
 
+    utter_ask_language_for_verbal_comms_fra:
+      - text: "Et est-ce la même langue dans laquelle vous aimez * écouter * les informations?\n\n Sinon, dans quelle langue préférez-vous"
 
-    utter_thanks_for_your_feedback:
-    - text: "Thanks, that's interesting!"
-    - text: "I appreciate your feedback"
+    utter_ask_language_for_written_comms_fra:
+      - text: "Dans quelle langue préférez-vous * lire * les informations"
 
-    utter_answer_covid_myth_cure:
-    - text: "To date, there is NO specific medicine recommended to prevent or treat the coronavirus."
+    utter_ask_willing_to_do_language_survey_fra:
+      - text: "Seriez-vous prêt à me parler un peu des langues que vous parlez"
 
-    utter_answer_covid_myth_antibiotics:
-    - text: "Antibiotics DO NOT work against viruses, antibiotics only work against bacteria."
+    utter_collect_fallback_fra:
+      - text: "Il semblerait que je rencontre quelques difficultés. Toutes mes excuses. Recommençons, en quoi puis-je vous aider aujourd'hui ?"
+      - text: "Désolé, je n'ai pas bien compris. Veuillez répéter votre question d'une manière différente, s'il vous plaît."
 
-    utter_answer_covid_myth_garlic:
-    - text: "Garlic is healthy but there is NO evidence from the current outbreak that eating garlic has protected people from the coronavirus."
+    utter_explain_pandemic_fra:
+      - text: "Une épidémie est locale ou régionale, une pandémie touche plusieurs pays et régions du monde."
 
-    utter_answer_covid_myth_saline_rinse:
-    - text: "There is NO evidence that regularly rinsing the nose with saline has protected people from infection with the coronavirus."
+    utter_explain_pandemic2_fra:
+      - text: "Voici quelque chose pour expliquer les différences"
 
-    utter_answer_covid_myth_other_vaccines:
-    - text: "Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenzae type b (Hib) vaccine, DO NOT provide protection against the coronavirus."
+    utter_explain_pandemic3_fra:
+      - text: ""
 
-    utter_answer_covid_myth_alcohol_chlorine:
-    - text: "Spraying alcohol or chlorine all over your body WILL NOT kill viruses that have already entered your body"
+    utter_get_back_on_topic_fra:
+      - text: "Je peux répondre aux questions sur COVID-19 ou des questions générales sur la santé"
+
+    utter_get_infection_stats_fra:
+      - text: "Il y a actuellement {active} personnes infectées dans {country}, un changement de {new} hier, {new_deaths} nouvelles fatalités ({total_deaths} totale)"
+
+    utter_get_informed_consent_fra:
+      - text: "Ne vous inquiétez pas, personne ne peut vous identifier à partir de vos questions ou commentaires, mais nous voulons que vous sachiez que nous collecterons et analyserons ce que vous tapez. Nous l’utiliserons pour améliorer ce service. Nous nous engageons à ne JAMAIS utiliser vos informations personnelles, y compris votre numéro de téléphone, sauf si vous nous le dites. En poursuivant cette conversation, nous supposerons que vous êtes d'accord. Je vous remerci"
+
+    utter_goodbye_fra:
+      - text: "D'accord. N'hésitez pas à nous recontacter pour toute autre question"
+
+    utter_greet_with_name_fra:
+      - text: "Salut {given_name_fr}"
+
+    utter_introduce_survey_fra:
+      - text: "Je parle le français et le swahili, mais j'apprends à parler davantage"
+
+    utter_no_local_stats_fra:
+      - text: "Je suis désolé, je n'ai pas d'informations locales - mais j'ai les statistiques nationales d'aujourd'hui"
+
+    utter_out_of_scope_fra:
+      - text: "Désolé, je ne sais pas encore comment y répondre."
 
-    utter_answer_covid_myth_thermal_scanners:
-    - text: "Thermal scanners CAN detect if people have a fever but CANNOT detect whether or not someone has the coronavirus"
+    utter_reply_goodbye_fra:
+      - text: "Parfait. N'hésitez pas à nous recontacter pour toute autre question."
 
-    utter_answer_covid_myth_UV:
-    - text: "Ultraviolet light SHOULD NOT be used for sterilization and can cause skin irritation"
+    utter_reply_greeting_fra:
+      - text: "Salut! Merci de m'avoir contacté. Mon nom est Uji - Ukingo Jibu. Je peux répondre à des questions au sujet du COVID-19. En quoi puis-je vous aider aujourd'hui ?"
 
-    utter_answer_covid_myth_hand_dryers:
-    - text: "Hand dryers are NOT effective in killing the coronavirus"
+    utter_reply_thanks_fra:
+      - text: "Merci à toi!"
 
-    utter_answer_covid_myth_hot_bath:
-    - text: "Taking a hot bath DOES NOT prevent the coronavirus"
+    utter_reply_where_do_you_live_fra:
+      - text: "Je suis un ordinateur, j'habite dans les téléphones."
+      - text: "Je suis un ordinateur, j'habite dans les nuages"
 
-    utter_answer_covid_myth_pets:
-    - text: "There is NO evidence that companion animals/pets such as dogs or cats can transmit the coronavirus."
+    utter_set_expectations_fra:
+      - text: "Je peux répondre à des questions sur COVID-19, que voulez-vous savoir? \n\nPar exemple, je peux vous dire combien de personnes souffrent de la maladie, ou comment vous protéger.\n\nJe ne fais pas ça depuis si longtemps, alors soyez patient avec moi"
 
-    utter_answer_covid_myth_mosquitos:
-    - text: "The coronavirus CANNOT be transmitted through mosquito bites."
+    utter_thanks_for_your_feedback_fra:
+      - text: "Merci de partager vos idées et vos préoccupations avec moi"
+      - text: "J'apprécie vos commentaires"
 
-    utter_answer_covid_myth_heat_kills:
-    - text: "The coronavirus CAN be transmitted in areas with hot and humid climates"
+    utter_welcome_back_fra:
+      - text: "C'est un plaisir de vous revoir"
+      - text: "Merci d'être revenu"
 
-    utter_answer_covid_myth_cold_kills:
-    - text: "Cold weather and snow CANNOT kill the coronavirus."
+    utter_reply_whats_your_name_fra:
+      - text: "Je m'appelle Uji"
 
-    utter_answer_covid_myth_only_old:
-    - text: "People of all ages CAN be infected by the coronavirus. Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus."
+    utter_reply_to_request_for_french_fra:
+      - text: "Je suis désolé, je semble avoir complètement mal compris la question. Pourriez-vous réessayer?"
 
-    utter_answer_covid_children_stress:
-    - text: "Children may respond to stress in different ways such as being more clingy, anxious, withdrawing, angry or agitated, bedwetting etc. Respond to your child’s reactions in a supportive way, listen to their concerns and give them extra love and attention. Children need adults’ love and attention during difficult times. Give them extra time and attention. Remember to listen to your children, speak kindly and reassure them. If possible, make opportunities for the child to play and relax. Try and keep children close to their parents and family and avoid separating children and their caregivers to the extent possible. If separation occurs (e.g. hospitalization) ensure regular contact (e.g. via phone) and re-assurance. Keep to regular routines and schedules as much as possible, or help create new ones in a new environment, including school/learning as well as time for safely playing and relaxing. ℹ Provide facts about what has happened, explain what is going on now and give them clear information about how to reduce their risk of being infected by the disease in words that they can understand depending on their age. This also includes providing information about what could happen in a re-assuring way (e.g. a family member and/or the child may start not feeling well and may have to go to the hospital for some time so doctors can help them feel better)."
+    utter_reply_to_wrong_answer_fra:
+      - text: "Je suis désolé, nous en prendrons note et le changerons dès que possible."
 
-    utter_answer_covid_stress:
-    - text: "It is normal to feel sad, stressed, confused, scared or angry during a crisis. Talking to people you trust can help. Contact your friends and family. If you must stay at home, maintain a healthy lifestyle - including proper diet, sleep, exercise and social contacts with loved ones at home and by email and phone with other family and friends. Don’t use smoking, alcohol or other drugs to deal with your emotions. If you feel overwhelmed, talk to a health worker or counsellor. Have a plan, where to go to and how to seek help for physical and mental health needs if required. ℹ Get the facts. Gather information that will help you accurately determine your risk so that you can take reasonable precautions. Find a credible source you can trust such as WHO website or, a local or state public health agency. Limit worry and agitation by lessening the time you and your family spend watching or listening to media coverage that you perceive as upsetting. Draw on skills you have used in the past that have helped you to manage previous life’s adversities and use those skills to help you manage your emotions during the challenging time of this outbreak."
+    utter_share_with_your_friends_fra:
+      - text: "Pour partager avec vos amis, envoyez-leur ce lien: https://t.me/twb_uji_drc_bot"
 
-    utter_answer_covid_donate:
-    - text: "Donate now to help fight coronavirus The Covid-19 Solidarity Response Fund is a secure way for individuals, philanthropies and businesses to contribute to the WHO-led effort to respond to the pandemic. Donate here: https://bit.ly/who-covid-19-donate"
+    utter_unknown_myths_fra:
+      - text: "Je vais essayer de me renseigner à ce propos"
+
+    utter_ask_location_fra:
+      - text: "Où es-tu?"
+        buttons:
+        - title: "N. Kivu"
+          payload: "kivu_nord"
+        - title: "S. Kivu"
+          payload: "kivu_sud"
+        - title: "Ituri"
+          payload: "ituri"
+        - title: "autre"
+          payload: "other"
+
+    utter_ask_myth_source_fra:
+      - text: "Si je peux vous demander - où avez-vous entendu cela?"
+        buttons:
+        - title: "Friends & Family"
+          payload: "f_and_f"
+        - title: "Radio"
+          payload: "radio"
+        - title: "WhatsApp"
+          payload: "whatsapp"
+        - title: "Twitter"
+          payload: "twitter"
+
+    utter_ask_preferred_channel_fra:
+      - text: "Comment préférez-vous recevoir des informations?"
+        buttons:
+        - title: "Parler"
+          payload: "in_person"
+        - title: "radio"
+          payload: "radio"
+        - title: "leaflet"
+          payload: "leaflet"
+        - title: "WhatsApp"
+          payload: "WhatsApp"
+        - title: "SMS"
+          payload: "SMS"
+        - title: "Autre"
+          payload: "Other"
 
-    utter_answer_covid_travel_advice:
-    - text: "WHO continues to advise against the application of travel or trade restrictions to countries experiencing COVID-19 outbreaks. It is prudent for travellers who are sick to delay or avoid travel to affected areas, in particular for elderly travellers and people with chronic diseases or underlying health conditions. _Affected areas_ are considered those countries, provinces, territories or cities experiencing ongoing transmission of COVID-19, in contrast to areas reporting only imported cases.  General recommendations for all travellers include: Wash your hands frequently Avoid touching your eyes, mouth and nose Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze Stay more than 1 meter (3 feet) away from a person who is sick Follow proper food hygiene practices Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19. Travellers returning from affected areas should: Self-monitor for symptoms for 14 days and follow national protocols of receiving countries. Some countries may require returning travellers to enter quarantine.  If symptoms occur, such as fever, or cough or difficulty breathing, travellers are advised to contact local health care providers, preferably by phone, and inform them of their symptoms and their travel history.  For the latest travel advice: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/travel-advice For the latest situation reports for affected areas:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/ For advice on proper food hygiene practices: https://www.who.int/foodsafety/publications/consumer/en/5keys_en.pdf?ua=1&ua=1 For advice on visiting live animal markets: https://www.who.int/health-topics/coronavirus/who-recommendations-to-reduce-risk-of-transmission-of-emerging-pathogens-from-animals-to-humans-in-live-animal-markets"
+    utter_ask_feedback_fra:
+      - text: "Avons-nous bien fait?"
+        buttons:
+        - title: "Oui"
+          payload: "/affirm_FRA"
+        - title: "Non"
+          payload: "/deny_FRA"
 
-    utter_answer_covid_myths_summary:
-    - text: "There is a lot of false information around. These are the facts. - People of all ages CAN be infected by the coronavirus. Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus. Cold weather and snow CANNOT kill the coronavirus. The coronavirus CAN be transmitted in areas with hot and humid climates The coronavirus CANNOT be transmitted through mosquito bites. There is NO evidence that companion animals/pets such as dogs or cats can transmit the coronavirus. Taking a hot bath DOES NOT prevent the coronavirus Hand dryers are NOT effective in killing the coronavirus Ultraviolet light SHOULD NOT be used for sterilization and can cause skin irritation Thermal scanners CAN detect if people have a fever but CANNOT detect whether or not someone has the coronavirus Spraying alcohol or chlorine all over your body WILL NOT kill viruses that have already entered your body Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenzae type b (Hib) vaccine, DO NOT provide protection against the coronavirus. There is NO evidence that regularly rinsing the nose with saline has protected people from infection with the coronavirus.  Garlic is healthy but there is NO evidence from the current outbreak that eating garlic has protected people from the coronavirus. Antibiotics DO NOT work against viruses, antibiotics only work against bacteria. To date, there is NO specific medicine recommended to prevent or treat the coronavirus. Check the facts on the WHO website: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+    utter_answer_covid_anxiety_fra:
+      - text: "Les symptômes du coronavirus (COVID-19) sont généralement légers pour la plupart des gens, en particulier les jeunes et les personnes en bonne santé. Cependant, dans certains cas, il peut provoquer une maladie grave: environ 1 personne sur 5 qui l'attrape a besoin de soins hospitaliers. Il est donc tout à fait normal que les gens s'inquiètent de la façon dont le coronavirus pourrait les affecter ainsi que leurs proches. La chose la plus puissante que nous puissions faire est de prendre des mesures pour nous protéger, protéger nos proches et nos communautés. Apprenez-en plus sur la façon de vous protéger sur: https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public "
 
-    utter_answer_covid_donts:
-    - text: "The following measures ARE NOT effective against COVID-2019 and can be harmful: - Smoking - Wearing multiple masks - Taking antibiotics In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be  sure to share your recent travel history with your health care provider."
+    utter_answer_covid_call_a_doctor_fra:
+      - text: "Si vous toussez, avez de la fièvre et des difficultés respiratoires, consultez rapidement un médecin – mais téléphonez d'abord à votre centre médical par téléphone."
 
-    utter_answer_covid_on_surfaces:
-    - text: "It is not certain how long the virus that causes COVID-19 survives on surfaces, but it seems to behave like other coronaviruses. Studies suggest that coronaviruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to several days. This may vary under different conditions (e.g. type of surface, temperature or humidity of the environment). The likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low. If you think a surface may be infected, clean it with simple disinfectant to kill the virus and protect yourself and others. Clean your hands with an alcohol-based hand rub or wash them with soap and water. Avoid touching your eyes, mouth, or nose."
+    utter_answer_covid_children_stress_fra:
+      - text: "Répondez aux réactions de votre enfant de manière encourageante, écoutez ses préoccupations et accordez-lui un amour et une attention supplémentaires. Les enfants ont besoin de l’amour et de l’attention des adultes dans les moments difficiles. Écoutez vos enfants et parlez gentiment. Dans la mesure du possible, faites en sorte que l'enfant puisse jouer et se détendre. Respectez les routines et les horaires réguliers autant que possible.  Essayez de garder les enfants près de leurs parents et de leur famille. Si une séparation se produit (par exemple, une personne doit se rendre à l'hôpital), assurez-vous d'un contact régulier (par téléphone) et assurez-vous qu'ils se sentent en sécurité et soutenue.  Donnez-leur des faits sur ce qui s'est passé; Expliquez ce qui se passe actuellement et donnez-leur des informations claires sur la façon de réduire leur risque d'être infecté par la maladie avec des mots qu'ils peuvent comprendre en fonction de leur âge. Cela comprend également la fourniture d'informations sur ce qui pourrait se produire de manière rassurante."
 
-    utter_answer_covid_infection_sources:
-    - text: "Coronaviruses are a large family of viruses that are common in animals. Occasionally, people get infected with these viruses which may then spread to other people. For example, SARS-CoV was associated with civet cats and MERS-CoV is transmitted by dromedary camels. Possible animal sources of COVID-19 have not yet been confirmed.   To protect yourself, such as when visiting live animal markets, avoid direct contact with animals and surfaces in contact with animals. Ensure good food safety practices at all times. Handle raw meat, milk or animal organs with care to avoid contamination of uncooked foods and avoid consuming raw or undercooked animal products. While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can transmit COVID-19. COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks. To protect yourself, clean your hands frequently and thoroughly.  WHO continues to monitor the latest research on this and other COVID-19 topics and will update as new findings are available. The risk of catching COVID-19 from the feces of an infected person appears to be low. While initial investigations suggest the virus may be present in feces in some cases, spread through this route is not a main feature of the outbreak. WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share new findings. Because this is a risk, however, it is another reason to clean hands regularly, after using the bathroom and before eating."
+    utter_answer_covid_disinfect_fra:
+      - text: "Pour se protéger du coronavirus (COVID-19), il faut désinfecter les objets et les surfaces, en particulier ceux que vous touchez régulièrement. Il faut jamais boire de produits désinfectants tels que le méthanol, l’éthanol et l’eau de Javel. Ils ne détruisent pas le virus dans l’organisme et entraînent des lésions des organes internes."
 
-    utter_answer_covid_incubation:
-    - text: "The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available."
+    utter_answer_covid_donts_fra:
+      - text: "Les mesures suivantes NE SONT PAS efficaces contre le coronavirus (COVID-19) et peuvent être nocives: - Fumer - Prise d'antibiotiques - Boire du méthanol, de l'éthanol ou d'autres désinfectants  Obtenez vos informations auprès de sources expertes telles que l'OMS. https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters "
 
-    utter_answer_covid_masks:
-    - text: "Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19. Disposable face mask can only be used once. If you are not ill or looking after someone who is ill then you are wasting a mask. There is a world-wide shortage of masks, so WHO urges people to use masks wisely. WHO advises rational use of medical masks to avoid unnecessary wastage of precious resources and mis-use of masks  (see Advice on the use of masks). The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing. See basic protective measures against the new coronavirus for more information. Remember, a mask should only be used by health workers, care takers, and individuals with respiratory symptoms, such as fever and cough. Before touching the mask, clean hands with an alcohol-based hand rub or soap and water. Take the mask and inspect it for tears or holes. Orient which side is the top side (where the metal strip is). Ensure the proper side of the mask faces outwards (the coloured side). Place the mask to your face. Pinch the metal strip or stiff edge of the mask so it moulds to the shape of your nose. Pull down the mask’s bottom so it covers your mouth and your chin. After use, take off the mask; remove the elastic loops from behind the ears while keeping the mask away from your face and clothes, to avoid touching potentially contaminated surfaces of the mask. Discard the mask in a closed bin immediately after use. Perform hand hygiene after touching or discarding the mask - Use alcohol-based hand rub or, if visibly soiled, wash your hands with soap and water."
+    utter_answer_covid_explain_pandemic_fra:
+      - text: "Une épidémie est locale ou régionale, une pandémie sévit dans plusieurs pays et régions du monde."
 
-    utter_answer_covid_SARS:
-    - text: "The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are quite different. SARS was more deadly but much less infectious than COVID-19. There have been no outbreaks of SARS anywhere in the world since 2003."
+    utter_answer_covid_gloves_fra:
+      - text: "Le fait de se laver les mains régulièrement protège mieux contre la COVID-19 que le port de gants en caoutchouc. Le virus peut se trouver sur les gants et il y a un risque de contamination si vous vous touchez le visage avec les gants. Se laver les mains est plus efficace que de porter des gants."
 
-    utter_answer_covid_treatments:
-    - text: "While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. WHO will continue to provide updated information as soon as clinical findings are available. There is no vaccine yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care. Possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19. The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing. (See Basic protective measures against the new coronavirus)."
+    utter_answer_covid_hospital_fra:
+      - text: "La plupart des patients du coronavirus (COVID-19) (environ 80 %) ‎guérissent sans qu’il soit nécessaire de les ‎hospitaliser. Si vous avez de la toux, de la fièvre et des difficultés respiratoires, consultez rapidement un médecin – mais contactez d'abord votre centre médical par téléphone."
 
-    utter_answer_covid_most_at_risk:
-    - text: "While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to develop serious illness more often than others."
+    utter_answer_covid_how_spread_fra:
+      - text: "Les gens peuvent attraper le coronavirus (COVID-19) en entrant en contact avec d'autres personnes atteintes du virus. La maladie peut se propager d'une personne à l'autre par de petites gouttelettes provenant du nez ou de la bouche et qui se propagent lorsqu'une personne atteinte du COVID-19 tousse ou expire. Ces gouttelettes atterrissent sur les objets et les surfaces autour de la personne. D'autres personnes attrapent ensuite le COVID-19 en touchant ces objets ou surfaces, puis en touchant leurs yeux, leur nez ou leur bouche. Les gens peuvent également attraper le coronavirus (COVID-19) s'ils respirent des gouttelettes d'une personne atteinte de coronavirus (COVID-19) qui tousse ou transmet des gouttelettes. C'est pourquoi il est important de rester à plus d'un mètre d'une personne malade."
 
-    utter_answer_covid_anxiety:
-    - text: "Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness: about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the COVID-19 outbreak will affect them and their loved ones. We can channel our concerns into actions to protect ourselves, our loved ones and our communities. First and foremost among these actions is regular and thorough hand-washing and good respiratory hygiene. Secondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel, movement and gatherings. Learn more about how to protect yourself at https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+    utter_answer_covid_incubation_fra:
+      - text: "La « période d'incubation » représente le temps entre le moment où le virus est contracté et le début des symptômes de la maladie. La plupart des estimations de la période d'incubation du Coronavrius (COVID-19) vont de 1 à 14 jours, le plus souvent autour de cinq jours."
 
-    utter_answer_covid_infection_likelihood:
-    - text: "The risk depends on where you  are - and more specifically, whether there is a COVID-19 outbreak unfolding there. For most people in most locations the risk of catching COVID-19 is still low. However, there are now places around the world (cities or areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce your risk of catching or spreading COVID-19. COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation where you are or intend to go. WHO publishes daily updates on the COVID-19 situation worldwide. You can see these at https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"
+    utter_answer_covid_infection_likelihood_fra:
+      - text: "Le risque dépend de l'endroit où vous vous trouvez et plus précisément, s'il y a une épidémie du coronavrius (COVID-19) présente sur le territoire. Pour les personnes vivant ou visitant ces zones, le risque d'attraper le coronavirus (COVID-19) est plus élevé. Assurez-vous de respecter toutes les restrictions locales concernant les voyages, les déplacements ou les grands rassemblements. Il est important de connaître la situation dans laquelle vous vous trouvez ou dans laquelle vous entrez."
 
-    utter_answer_covid_protection:
-    - text: "You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions: Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.  Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands. Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing. Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease. Avoid touching eyes, nose and mouth.  Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.  Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately. Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19.  Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections. Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places - especially if you are an older person or have diabetes, heart or lung disease. Why? You have a higher chance of catching COVID-19 in one of these areas."
+    utter_answer_covid_infection_sources_fra:
+      - text: "Les sources originales du coronavirus (COVID-19) n'ont pas encore été confirmées. Le coronavirus (COVID-19) se propage entre les humaines principalement par les gouttelettes produites lorsqu'une personne infectée tousse, éternue ou parle."
 
-    utter_answer_covid_how_spread:
-    - text: "People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.   These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth.  People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets.  This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick. WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share updated findings."
+    utter_answer_covid_isolate_fra:
+      - text: "La majorité de malades présente des symptômes 14 jours après avoir été en contact avec le virus. Pour cette raison, les personnes présentant les symptômes ou des personnes qui avaient eu contact avec quelqu'un présentant les symptômes doivent être isolées (cela signifie être loin de tout contact physique avec quelqu'un d'autre) pendant 14 jours."
 
-    utter_answer_covid_what_is_corona_covid-19:
-    - text: "Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as  Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.  COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019."
+    utter_answer_covid_masks_availability_fra:
+      - text: "Demandez à votre centre de santé où vous pouvez vous procurer un masque. Portez un masque si vous toussez ou éternuez. Si vous portez un masque, il est important que vous sachiez l’utiliser et l’éliminer correctement "
 
-    utter_answer_covid_symptoms:
-    - text: "Any of: Fever, joint pain, headaches, dry cough, loss of sense of smell may be symptoms"
+    utter_answer_covid_masks_care_fra:
+      - text: "-Lorsque l’on porte un masque, éviter de le toucher; chaque fois que l’on touche un masque usagé, se laver les mains à l’aide d’une solution hydroalcoolique ou à l’eau et au savon  -Lorsqu’il s’humidifie, le remplacer par un nouveau masque et ne pas réutiliser des masques à usage unique -Pour retirer le masque: l’enlever par derrière (ne pas toucher le devant du masque); le jeter immédiatement dans une poubelle fermée; se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon"
 
-    utter_answer_wash_hands_how:
-    - text: "You should wash your hands with clean water and soap, for at least 20 seconds. If you have no access to soap and water use sanitizer."
+    utter_answer_covid_masks_effectiveness_fra:
+      - text: "Les masques offrent une certaine protection et aident à empêcher la propagation du virus. Portez un masque si vous toussez ou éternuez. Si vous portez un masque, il est important que vous sachiez l’utiliser et l’éliminer correctement."
 
-    utter_answer_wash_hands_frequency:
-    - text: "You should wash your hands a lot"
+    utter_answer_covid_masks_how_to_fra:
+      - text: "-Avant de mettre un masque, se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon -Appliquer le masque de façon à recouvrir le nez et la bouche et veillez à l’ajuster au mieux sur votre visage -Lorsque l’on porte un masque, éviter de le toucher; chaque fois que l’on touche un masque usagé, se laver les mains à l’aide d’une solution hydroalcoolique ou à l’eau et au savon  -Lorsqu’il s’humidifie, le remplacer par un nouveau masque et ne pas réutiliser des masques à usage unique -Pour retirer le masque: l’enlever par derrière (ne pas toucher le devant du masque); le jeter immédiatement dans une poubelle fermée; se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon.  https://www.youtube.com/watch?v=KuT1KNfJIjc"
 
-    utter_answer_collect_fallback:
-    - text: "Looks like I'm having trouble. Apologies for that. Let's start again, how can I help you today?"
+    utter_answer_covid_risk_most_at_risk_fra:
+      - text: "Toute personne court le risque de tomber malade gravement du COVID-19. Les personnes plus ‎âgées et celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade."
 
-    utter_answer_fallback:
-    - text: "I'm sorry didn't quite get that. Please say that again."
+    utter_answer_covid_risk_for_children_fra:
+      - text: "Les enfants courent aussi le risque d'être contaminé par le virus. Les personnes plus ‎âgées et celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade. "
 
-    utter_out_of_scope:
-    - text: "Sorry, I don't know how to respond to that."
-    - text: "I'm sorry, I can't answer that now."
-    - text: "I don't know what to say to that"
+    utter_answer_covid_risk_for_old_people_fra:
+      - text: "Les personnes plus ‎âgées et celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade."
 
-    utter_get_back_on_topic:
-    - text: "Any questions about COVID-19 or general questions about health I can help you with?"
+    utter_answer_covid_risk_with_preexisting_fra:
+      - text: "Celles qui ont d’autres problèmes ‎de santé (hypertension artérielle, ‎problèmes cardiaques ou pulmonaires, ‎diabète ou cancer) ont plus de risque de ‎présenter des symptômes graves. Toutefois, ‎n’importe qui peut contracter le coronavirus (COVID-19) et ‎tomber gravement malade. "
 
-    utter_anything_else_question:
-    - text: "Anything else I can try to answer for you?"
+    utter_answer_covid_myth_alcohol_chlorine_fra:
+      - text: "Pulvériser de l'alcool, du chlore ou d’autres désinfectants sur votre corps ou leur introduction dans l'organisme ne protègent pas contre le coronavirus (COVID-19) et peuvent être dangereuses."
 
-    utter_answer_goodbye:
-    - text: "Goodbye. Please reach out again if you have any questions."
-    - text: "Bye! Nice talking with you!"
+    utter_answer_covid_myth_antibiotics_fra:
+      - text: "Les antibiotiques n'agissent PAS sur les virus, les antibiotiques n'agissent que sur les bactéries."
 
-    utter_answer_greeting:
-    - text: "Hello! I can answer questions about COVID-19. How can I help with today?"
+    utter_answer_covid_myth_cold_kills_fra:
+      - text: "Le froid et la neige NE PEUVENT PAS tuer le coronavirus (COVID-19)."
 
-    utter_goodbye:
-    - text: "Goodbye. Please reach out again if you have any questions."
-    - text: "Bye! Nice talking with you!"
+    utter_answer_covid_myth_drink_fra:
+      - text: "Boire du méthanol, de l’éthanol ou d’autres désinfectants NE PERMET PAS de prévenir ou de guérir le coronavirus (COVID-19) et peut être extrêmement dangereux"
 
+    utter_answer_covid_myth_drink_alcohol_fra:
+      - text: "Boire de l'alcool ne protège pas contre le coronavirus (COVID-19) et peut être dangereux"
+
+    utter_answer_covid_myth_flies_fra:
+      - text: "Il n’y a aucune donnée ou information tendant à montrer que les mouches domestiques transmettent le coronavirus (COVID-19). Le virus se transmet principalement par les gouttelettes qu’une personne infectée expulse quand elle tousse, éternue ou parle."
+
+    utter_answer_covid_myth_fruits_fra:
+      - text: "Manger les fruits est bon pour le santé, mais ne prévient ni ne guérit le virus corona (COVID-19)."
+
+    utter_answer_covid_myth_garlic_fra:
+      - text: "L'ail a des bienfaits sur la santé, mais il n'y a AUCUNE preuve de l'épidémie actuelle selon laquelle manger de l'ail protège du coronavirus."
+
+    utter_answer_covid_myth_hand_dryers_fra:
+      - text: "Les sèche-mains ne permettent PAS de tuer le coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_heat_kills_fra:
+      - text: "Le coronavirus (COVID-19) PEUT être transmis dans les zones à climat chaud et humide. S'exposer au soleil ou à des hautes températures N'EMPÊCHE PAS de contracter la maladie à coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_hold_breath_fra:
+      - text: "Arriver à retenir sa respiration pendant 10 secondes ou plus sans tousser ni se sentir gêné NE SIGNIFIE PAS que l'on est épargné par la maladie à coronavirus (COVID-19) ou toute autre maladie pulmonaire."
+
+    utter_answer_covid_myth_hot_bath_fra:
+      - text: "Prendre un bain chaud ne protège pas contre le coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_mosquitos_fra:
+      - text: "Le coronavirus (COVID-19) NE PEUT PAS être transmis par les piqûres de moustiques."
+
+    utter_answer_covid_myth_only_old_fra:
+      - text: "Les personnes de tous âges PEUVENT attraper le coronavirus (COVID-19). Les personnes âgées et les personnes ayant des antécédents médicaux (tels que l'asthme, le diabète, les maladies cardiaques) semblent être plus vulnérables à contracter une forme sévère du virus."
+
+    utter_answer_covid_myth_other_vaccines_fra:
+      - text: "Les vaccins contre la pneumonie ne permettent AUCUNE protection contre le coronavirus."
+
+    utter_answer_covid_myth_phone_signals_fra:
+      - text: "Les virus ne circulent pas sur les ondes radio ou par les réseaux mobiles."
+
+    utter_answer_covid_myth_saline_rinse_fra:
+      - text: "Rien ne prouve que le fait de se rincer régulièrement le nez avec une solution saline protège les gens contre l’infection par le coronavirus (COVID-19).  "
+
+    utter_answer_covid_myth_spices_fra:
+      - text: "Ajouter du piment dans votre soupe ou dans un autre plat ne permet PAS de prévenir ni de guérir le coronavirus (COVID-19). "
+
+    utter_answer_covid_myth_steam_fra:
+      - text: "L'inhalation de vapeur chaude NE guérit PAS ni n'empêche le coronavirus (COVID-19). L'inhalation de vapeur très chaude est dangereuse."
+
+    utter_answer_covid_myth_thermal_scanners_fra:
+      - text: "Les scanners thermiques PEUVENT détecter si une personne a de la fièvre, mais NE PEUVENT PAS détecter si une personne a contracté ou non le coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_traditional_medicine_fra:
+      - text: "Il n'existe aucun traitement naturel connu qui traite ni stop la contamination au coronavirus. La meilleure protection est d'observer les gestes barrières et se signaler tôt en cas d'apparition des symptômes."
+
+    utter_answer_covid_myth_UV_fra:
+      - text: "La lumière ultraviolette ne DOIT PAS être utilisée pour la stérilisation et celle-ci peut provoquer une irritation de la peau."
+
+    utter_answer_covid_myths_summary_fra:
+      - text: "Voici quelques faits: - La majorité des personnes atteintes du coronavirus peuvent guérir et éliminer le virus de leur corps. - Certaines personnes peuvent développer des formes plus graves de la maladie, comme une pneumonie. Certaines autres personnes, bien qu'infectées, ne présentent que de légers symptômes. - Des personnes de tous âges PEUVENT être infectées par le coronavirus. Les personnes âgées et les personnes ayant des problèmes de santé préexistants (tels que l'asthme, le diabète, les maladies cardiaques) semblent être plus vulnérables à devenir gravement malades avec le virus. -À ce jour, AUCUN médicament spécifique n'est recommandé pour prévenir ou traiter le coronavirus. La majorité des patients se rétablissent avec une thérapie de soutien. -Boire du méthanol, de l'éthanol ou d'autres désinfectants N'empêchera PAS ni ne guérira le coronavirus et peut être extrêmement dangereux.  Vérifiez les faits sur le site Web de l'OMS: https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters "
+
+    utter_answer_covid_on_surfaces_fra:
+      - text: "On ne sait pas exactement combien de temps le virus responsable du coronavirus (COVID-19) survit sur les surfaces, mais il semble se ressembler comme les autres coronavirus. Des études suggèrent que les coronavirus (y compris les informations préliminaires sur le virus COVID-19) peuvent persister sur les surfaces pendant quelques heures ou jusqu'à plusieurs jours. Cela peut varier dans différentes conditions (par exemple, le type de surface, la température ou l'application de l'environnement). Si vous pensez qu'une surface peut être infectée, nettoyez-la avec un simple désinfectant pour tuer le virus, pour vous protéger et protéger les autres. "
+
+    utter_answer_covid_protection_fra:
+      - text: "-Lavez-vous les mains régulièrement (pendant au moins 20 secondes) avec un gel à base d'alcool ou lavez-les à l'eau et au savon.  -Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. - Évitez de toucher vos yeux, votre nez et votre bouche. -Couvrez-vous la bouche et le nez avec votre coude plié ou un mouchoir lorsque vous toussez ou éternuez. Jetez ensuite immédiatement le tissu utilisé. -Restez à la maison si vous ne vous sentez pas bien. Si vous avez de la fièvre, de la toux et des difficultés respiratoires, consultez un médecin. "
+
+    utter_answer_covid_protection_wash_hands_fra:
+      - text: "-Lavez-vous les mains régulièrement (pendant au moins 20 secondes) avec un gel à base d'alcool ou lavez-les à l'eau et au savon. Cela tue les virus qui peuvent être présents sur vos mains. https://apps.who.int/iris/bitstream/handle/10665/331922/WHO-2019-nCoV-IPC_WASH-2020.3-fre.pdf     "
+
+    utter_answer_covid_protection_keep_distance_fra:
+      - text: "-Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. Lorsqu'une personne tousse ou éternue, elle fait passer de petites gouttelettes dans le nez ou la bouche qui peuvent contenir le virus. Évitez de toucher vos yeux, votre nez et votre bouche. Les mains touchent de nombreuses surfaces et peuvent transmettre des virus à votre corps lorsque vous touchez vos yeux, votre nez ou votre bouche."
+
+    utter_answer_covid_protection_cover_mouth_nose_fra:
+      - text: "-Couvrez-vous la bouche et le nez avec votre coude plié ou un mouchoir lorsque vous toussez ou éternuez. Jetez ensuite immédiatement le tissu utilisé. Des gouttelettes d'éternuements ou de toux peuvent propager le virus."
+
+    utter_answer_covid_protection_stay_at_home_fra:
+      - text: "-Restez à la maison si vous ne vous sentez pas bien. Si vous avez de la fièvre, de la toux et des difficultés respiratoires, consultez un médecin et appelez à l'avance. Suivez les instructions de votre autorité sanitaire locale. "
+
+    utter_answer_covid_SARS_fra:
+      - text: "Le syndrome respiratoire aigu sévère (SRAS) provient de la même famille de virus que le coronavirus actuel (COVID-19) et les deux peuvent provoquer des problèmes respiratoires (respiratoires). Cependant, ce sont des maladies différentes. Il n'y a eu aucune éclosion de SRAS dans le monde depuis 2003."
+
+    utter_answer_covid_stay_at_home_fra:
+      - text: "Si votre gouvernement local vous a conseillé de rester en isolement, protégez-vous et restez à la maison. Même si vous êtes en bonne santé,. Ne sortez que pour les besoins vitaux de votre famille, restez à la maison pendant au moins 14 jours."
+
+    utter_answer_covid_stress_fra:
+      - text: "Il est naturel d’éprouver de la tristesse, du stress, de la confusion, de la peur ou de la colère lors d’une crise. Vous pouvez trouver du réconfort en parlant à des gens en qui vous avez confiance. Prenez contact avec vos amis et les membres de votre famille. Si vous devez rester chez vous, conservez un mode de vie sain, ce qui suppose entre autres un régime alimentaire adapté, du sommeil, de l’exercice et des contacts sociaux avec vos proches à la maison ou par courrier électronique ou téléphone avec le reste de votre famille et vos amis. Ne cherchez pas à canaliser vos émotions en fumant, en buvant de l’alcool ou en consommant d’autres produits stupéfiants. Si vous vous sentez dépassé par les événements, parlez-en à des professionnels de la santé ou à un conseiller. Soyez prêt, sachez où aller et comment solliciter de l’aide en cas de besoin si vous avez des problèmes physiques ou psychologiques.  Informez-vous. Prenez les renseignements qui vous aideront à déterminer avec précision les risques que vous encourez de façon à prendre des précautions raisonnables. Cherchez une source d’information fiable, comme le site web de l’OMS ou un organisme local ou national de santé publique."
+
+    utter_answer_covid_symptoms_fra:
+      - text: "Les symptômes les plus fréquents du coronavirus (COVID-19) sont la fièvre, la toux sèche et la ‎fatigue. D’autres symptômes moins courants ‎peuvent également apparaître chez ‎certaines personnes, comme des ‎courbatures et des douleurs, une congestion ‎nasale, des maux de tête, une conjonctivite, ‎des maux de gorge, une diarrhée, une perte ‎du goût ou de l’odorat, une éruption ‎cutanée ou une décoloration des doigts de la ‎main ou du pied. Certaines personnes peuvent développer des formes plus graves de la maladie, comme une pneumonie. Certaines autres personnes, ‎bien qu’infectées, ne présentent que des ‎symptômes très discrets. https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses "
+
+    utter_answer_covid_travel_advice_fra:
+      - text: "Les recommandations générales pour tous les voyageurs comprennent :  -Lavez-vous régulièrement les mains  -Évitez de vous toucher les yeux, la bouche et le nez  -Couvrez-vous la bouche et le nez avec votre coude plié ou avec un mouchoir lorsque vous toussez ou éternuez  -Restez à plus d'un mètre d'une personne malade   Les voyageurs revenant des zones touchées doivent :  -Surveiller les symptômes pendant 14 jours et suivre les protocoles nationaux du pays. -En cas de symptômes tels que la fièvre, la toux ou des difficultés respiratoires, il est conseillé aux voyageurs de contacter les prestataires de soins de santé locaux, de préférence par téléphone, et de les informer de leurs symptômes et de leurs antécédents de voyage."
+
+    utter_answer_covid_treatments_fra:
+      - text: "À ce jour, il n'existe aucun vaccin et aucun médicament spécifique pour prévenir ou traiter le coronavirus (COVID-2019). Des vaccins possibles et certains traitements médicamenteux spécifiques sont en cours de test. Vous ne devez pas vous donner de médicaments tels que des antibiotiques. Cependant, les personnes concernées devraient recevoir des soins pour soulager les symptômes. Les personnes gravement malades doivent être hospitalisées. La plupart des patients se rétablissent grâce aux soins de soutien. On peut guérir de la maladie à coronavirus (COVID-19). https://apps.who.int/iris/bitstream/handle/10665/332437/WHO-2019-nCoV-clinical-2020.5-fre.pdf "
+
+    utter_answer_covid_wash_hands_frequency_fra:
+      - text: "Lavez-vous les mains très régulièrement avec un produit hydroalcoolique ou à l'eau et au savon."
+
+    utter_answer_covid_wash_hands_how_fra:
+      - text: "Lavez-vous les mains avec de l'eau propre et du savon, pendant au moins 20 secondes. Si vous n'avez pas accès à du savon et à de l'eau, utilisez du gel hydroalcoolique."
+
+    utter_answer_covid_what_is_corona_covid-19_fra:
+      - text: "Les coronavirus sont une grande famille de virus qui peuvent provoquer des maladies chez les animaux ou les humains. Chez l'homme, plusieurs coronavirus sont connus pour provoquer des infections respiratoires allant du rhume à des maladies plus graves. Le coronavirus le plus récemment découvert provoque la maladie à coronavirus (COVID-19). COVID-19 est la maladie infectieuse causée par le coronavirus le plus récemment découvert. https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses  "
+
+    utter_answer_covid_why_distancing_fra:
+      - text: "Gardez une distance d'au moins 1 mètre avec toute personne qui tousse ou éternue. Lorsqu'une personne tousse ou éternue, elle fait passer de petites gouttelettes dans le nez ou la bouche qui peuvent contenir le virus. Évitez de toucher vos yeux, votre nez et votre bouche. Les mains touchent de nombreuses surfaces et peuvent transmettre des virus à votre corps lorsque vous touchez vos yeux, votre nez ou votre bouche. "
+
+    utter_anything_else_lin:
+      - text: "Nini lisusu nakokki komeka koyanola yo?"
+
+    utter_ask_anything_else_lin:
+      - text: "Eloko musus nakoki komeka koyanola yo?"
+
+    utter_ask_feedback_reason_lin:
+      - text: "Okoki koyebisa biso nini okanisa tokoki kobongisa?"
+
+    utter_ask_first_time_lin:
+      - text: "Ezali mbala ya liboso tosolola?"
+
+    utter_ask_given_name_lin:
+      - text: "Olingi na benga yo na kombo nini?"
+      - text: "Baninga nayo ba bengaka yo nani?"
+
+    utter_ask_language_at_home_lin:
+      - text: "Munoko (lokota) nini olobaka mingi mingi na ndaku"
+
+    utter_ask_language_for_verbal_comms_lin:
+      - text: "Ezali kaka munoko (lokota) wana kaka nde okolinga 'koyoka: ba nsango?/n/n soki te, na munoko (lokotota) nini okolinga"
+
+    utter_ask_language_for_written_comms_lin:
+      - text: "Na monoko (lokota) nini okolinga 'kotanga' ba nsango"
+
+    utter_ask_willing_to_do_language_survey_lin:
+      - text: "Okoki koyebisa ngai minoko (ba nkota) nini olobaka"
+
+    utter_collect_fallback_lin:
+      - text: "Na banzi nazali na mwa mikakatano.  Bolimbi mingi.  Tobandela, lolenge nini nakoki kosunga yo na mokolo mwa lelo?"
+      - text: "Bolimbisi, na sololi (comprendre) malamu te.  Meka kobandela motuna nayo na lolenge mususu. soki osepeli."
+
+    utter_explain_pandemic_lin:
+      - text: "épidémie ezali esika moko, to bisika mingi kasi na mboka moko. pandémie ebetaka ba mboka ebele mpe bikolo ebele ontei (kati) ya mokili."
+
+    utter_explain_pandemic2_lin:
+      - text: "Tala malakisi pona kotalisa ba bokeseni"
+
+    utter_explain_pandemic3_lin:
+      - text: "Awa nde mwa malakisi pona kondimbola (ko expliquer) ba bokeseni"
+
+    utter_get_back_on_topic_lin:
+      - text: "Nakoki koyanola na mituna mya maye matali COVID-19 to mituna mya maye matali bokolongonnu bwa nzoto."
+
+    utter_get_infection_stats_lin:
+      - text: "Ezali sika awa {active} bato bazwami na bokono {country}, bokeseni ya {new} lobi, {new_deaths} baweyi oyo babakisami ({total_deaths} motuya) "
+
+    utter_get_informed_consent_lin:
+      - text: "Komitungisama te, moto moko te akoki koyeba soki ozali nani uta ya mituna mya yo to ba nkoma mya yo, kasi to lingi oyeba ete toko kongola mpe kotala na bosikisiki makomi mya yo.  tokosalela myango na ntina ya bobongisi mosala oyo.  To kotaka ATA MOKOLO MOKO TE na bosaleli ya ba nsango ya bomoto bya yo, to pe numero nayo ya alo alo te, kaka soki opesi biso ndingisa.  kati na kokoba na lisolo oyo, to banzi ete osili kondima.  Na tondi yo botondi."
+
+    utter_goodbye_lin:
+      - text: "Malamu, kozala na bokebi te pona kozengela biso pona mituna misusu."
+
+    utter_greet_with_name_lin:
+      - text: "Alo {given_name_ln}"
+
+    utter_introduce_survey_lin:
+      - text: "Nalobaka lopoto mpe kiswahili, kasi nazali koyekola koloba mingi."
+
+    utter_no_local_stats_lin:
+      - text: "Bolimbisi, nazali na ba nsango ya mboka te - kasi nazali na mituya oyo ya lelo ya ekolo mobimba "
+
+    utter_out_of_scope_lin:
+      - text: "Bolimbisi, nasili koyeba te lolenge nini yako yanola sika awa."
+
+    utter_reply_goodbye_lin:
+      - text: "Malamu, kozala na bokebi te pona kozengela biso pona mituna misusu."
+
+    utter_reply_greeting_lin:
+      - text: "Mbote! Matondo pona bosololi na biso.  kombo na ngai ezali Uji - Ukingo Jibu.  nakoki koyanola na mituna oyo matali COVID-19.  lolenge nini nakoki kosunga yo lelo?"
+
+    utter_reply_thanks_lin:
+      - text: "Matondo pona yo"
+
+    utter_reply_where_do_you_live_lin:
+      - text: "nazali ordinateur, navandaka ontei (okati) ya ba alo alo (telephones)."
+      - text: "Nazali ordinateur, navandaka na mapata."
+
+    utter_set_expectations_lin:
+      - text: "Nakoki koyanola na mituna mya maye matali COVID-19, Nini olingi koyeba?/n/n na yango, nakoki koyebisa yo bato boni bazali na bokono, to lolenge nini okoki komibatela./n/n Nabandi kosala yango kala mingi te, zala na motema monene na ngai!"
+
+    utter_thanks_for_your_feedback_lin:
+      - text: "Matondi pona bokaboli makasini mya yo mpe mitungisi mya yo  na ngai"
+      - text: "Nasepeli na makomi mya yo"
+
+    utter_welcome_back_lin:
+      - text: "Ezalaki esenge nde tomonani sima"
+      - text: "Matondo pona bozongi nayo"
+
+    utter_reply_whats_your_name_lin:
+      - text: "Kombo na ngai Uji"
+
+    utter_reply_to_request_for_french_lin:
+      - text: "Bolombisi, na banzi ete na sololi malamu te motuna.  Okoki kobandela ?"
+
+    utter_reply_to_wrong_answer_lin:
+      - text: "Bolimbisi, tozwi yango na motema mpe toko bongisa ntangu tokoki."
+
+    utter_share_with_your_friends_lin:
+      - text: "Pona bokaboli na ba ninga, tindela bangu nzela oyo :: https://t.me/twb_uji_drc_bot"
+
+    utter_unknown_myths_lin:
+      - text: "Nako luka nazwa ba nsango na maye matali mituna oyo"
+
+    utter_ask_location_lin:
+      - text: "Oza wpi?"
+        buttons:
+        - title: "N. Kivu"
+          payload: "kivu_nord"
+        - title: "S. Kivu"
+          payload: "kivu_sud"
+        - title: "Ituri"
+          payload: "ituri"
+        - title: "Nyingine"
+          payload: "other"
+
+    utter_ask_myth_source_lin:
+      - text: "Soki nakoki kotuna yo - esika nini oyokaki yango?"
+        buttons:
+        - title: "Friends & Family"
+          payload: "f_and_f"
+        - title: "Radio"
+          payload: "radio"
+        - title: "WhatsApp"
+          payload: "whatsapp"
+        - title: "Twitter"
+          payload: "twitter"
+
+    utter_ask_preferred_channel_lin:
+      - text: "Lolenge nini osepeli koyamba ba nsango?"
+        buttons:
+        - title: "Kuzungumza"
+          payload: "in_person"
+        - title: "radio"
+          payload: "radio"
+        - title: "leaflet"
+          payload: "leaflet"
+        - title: "WhatsApp"
+          payload: "WhatsApp"
+        - title: "SMS"
+          payload: "SMS"
+        - title: "Nyingine"
+          payload: "Other"
+
+    utter_ask_feedback_lin:
+      - text: "Tosali malamu?"
+        buttons:
+        - title: "Ndio"
+          payload: "/affirm_LIN"
+        - title: "Hapana"
+          payload: "/deny_LIN"
+
+    utter_answer_covid_anxiety_lin:
+      - text: "Bilembo ya coronavirus (COVID-19) bizali makasi te epayi ya bato mingi, mingi mingi esika ya bilenge to mpe bato oyo bazali na nzoto kolongonu.  Kasi, ekomaka na ba ngonga misusu, ekoki ko mema bokono ya kafumba: moto moko okati ya bato mitano oyo bazwi bokono azali na posa ya kokota lopitalo pona kosalisama. Ezali bongo likambo ya kokamwa te ntangu bato bazali komitungisama na lolenge nini coronavirus ekoki ko tungisa bango mpe baye bazali nzinga nzinga na bango.  Eloko ya makasi mpe motuya tokoki kosala ezali kozwa bizaleli oyo esengeli pona tomibatela, tobatela mpe baye ya biso mpe ba mabota na biso. Yekola mingi lolenge ya komibatela na nzela ya malakisi moye :  https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public "
+
+    utter_answer_covid_call_a_doctor_lin:
+      - text: "Soki ozali kokosola, ozali na fièvre mpe mikakatano na kopema, Luka munganga na lobango - kasi benga nayino centre medical na nzela ya téléphone."
+
+    utter_answer_covid_children_stress_lin:
+      - text: "Yanola na mituna mpe bizaleli ya muana nayo na lolenge oyo ekoki kopesa ye makasi, yoka mitungisi mya ye mpe pesa ye bolingo mpe makanisi mya yo. bana bazali na mposa ya bolingo mpe makanisi ya bakolo na ba ngonga ya pasi.  Yoka bana bayo mpe lobela bango na loelnge ya malamu.  Sala oyo ekoki kosalema ete muana asakana mpe azala na kimia.  ntosa misala mya mikolo na mikolo mpe ba ntangu soki makoki ya kosala myango mazali. Meka kosala ete bana bazala pembeni ya ba boti na bango mpe ya libota na bango.  Soki bokabwani songolo ekoti (ndakisa, moto moko esengeli akende lopitalo), sala ete lisolo ezala na ntangu yonso (na nzela ya telephone) mpe sala ete bana ba yeba ete bazali ya kobatelama mpe bato bakosalisa bango bazali.  Pesa bango ba nsango ya maye malekaki; ndimbolela bango liye lizali kolekana sika awa mpe pesa bango ba nsango ya malonga na maye matali lolenge ya ko longola ba nkokoso oyo ekoki kokomela bango na kozwa bokono sala yango na maloba oyo bakoki kososola na mbula na bango. Yango mpe etali lolenge ya bopeseli ba nsango ekoki mpe kosalema na lolenge ya kima."
+
+    utter_answer_covid_disinfect_lin:
+      - text: "Pona komibatela na coronavirus (COVID-19), esengeli opetola biloko mpe bisika, mingi penza biloko oyo osimbaka ntangu inso.  Esengeli ata mokolo moko te komela ba nkisi ya bopetoli ndakisa ya méthanol, éthanol  mpe mayi ya Javel.  myango ma bomaka microbi te soki ezali okati ya nzoto ya mutu kasi ma zokisaka nde biteni ya kati ya nzoto ya mutu."
+
+    utter_answer_covid_donts_lin:
+      - text: "Bizaleli oyo mazali ko landa MAZALI MAKASI TE pona kobundi coronavirus (COVID-19) mpe makoki komema mabe: - Komela likaya - Komela ba antibiotiki - komela méthanol, éthanol pe nkisi misusu ya bopetoli.  Zwa ba nsango esengeli oyo mazali kowuta na bato ya mayele lokola OMS.   https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters "
+
+    utter_answer_covid_explain_pandemic_lin:
+      - text: "Epidemie ezali esika moko, to pe bisika mukie okati ya etuku to mpe engumba lyoko, pandemie ezali bisika ebele na ba mboka mpe ba etuku ebele okati ya mokili."
+
+    utter_answer_covid_gloves_lin:
+      - text: "Bosokoli maboko ntango inso ezali kobatela makasi na COVID-19 koleka bolati masque to mpe ba gants ya caoutchouc. Microbi ekoki kozala na ba gants mpe keba ya bozwi bokono ezali na esika wana soki osimbi elongi na ba gants. Ko sokola maboko eleki kolata ba gants. "
+
+    utter_answer_covid_hospital_lin:
+      - text: "Mingi ya bakoni ya coronavirus (COVID-19) (pene ya 80 %) babikaka na bokono kutu esengelaka te ete bakota lopitalo.  Soki ozali na kosu-kosu, fièvre mpe mikakatano na kopema, Luka munganga na lobango - kasi benga nayino centre medical na nzela ya téléphone."
+
+    utter_answer_covid_how_spread_lin:
+      - text: "Bato bakoki tozwa bokono ya coronavirus (COVID-19) na bokutani na bato misusu oyo basili kozala na microbi yena.  Bokono epanzanaka kowuta na moto moko mpe kokende epayi ya moto mosusu na ba matanga oyo mazali kowuta na zolo to na munoko ya moto oyo azali na coronavirus, mpe mazali kopanza na ntangu moto oyo azali na COVID-19 akosoli to abimisi mpema makasi.  Ba matanga wana mazali kokita likolo ya biloko mpe bisika oyo mazwami nzinga nzinga ya moto yango.  Bato misusu bakozwa COVID-19 na sima, na ntangu ya bosimbi biloko to mpe bisika ena, mpe na siima ya bosimbi ba zolo to mpe minoko mya bango.  bato bakoki mpe kozwa coronavirus (COVID-19) soki bazali kompema matanga mazali kowuta epayi ya moto oyo azali na coronavirus (COVID-19) ntangu akosoli to apnzi matanga mya ye mya nzoto.  Na ntina ena esengeli kozala musika ya koleka metre moko na moto ya bokono."
+
+    utter_answer_covid_incubation_lin:
+      - text: "'Ngonga liboso bokono ebimisa bilembo' (na lopoto période d'incubation) ezali ngonga oyo ezali kokende uta mokolo microbi ekotaki kino mokolo bilembo ya bokono ebandi komonisama.  Na oyo etali bokono ya Coronavirus (COVID-19) ngonga yango ezali kobanda na mokolo ti na mikolo zomi na minei (14), mingi mingi sima ya mikolo mitano (5)."
+
+    utter_answer_covid_infection_likelihood_lin:
+      - text: "Bokebi ezali mingi kowuta na bisika oyo osili kozala mpe mingi penza, soki na bisika yango épidémie ya coronavrius (COVID-19) esili koyingela.  Pona batu oyo bazali kovanda to bazali kokana kovanda na koleka na bisika ena, keba keba ya kozwa coronavrius (COVID-19) ezali makasi penza.  Zala na kotosa maye ma pekisami na bisika ena oyo etali mibembo, kotambola to makita ya batu ebele.  ezali na motuya koyeba makambu nini ezali koleka esika ozali to pe esila ozali ko kende.  "
+
+    utter_answer_covid_infection_sources_lin:
+      - text: "  Biska mpenza ya solo coronavrius (COVID-19) ewuti naino basili koyebana te. Coronavrius (COVID-19) ezali kopanzana okati mingi penza na ba matanga oyo mazali kowuta epayi ya moto oyo azali na microbi na ntangu azali kokosola, kosala intchi to koloba."
+
+    utter_answer_covid_isolate_lin:
+      - text: "Ebele ya bakoni bamonisaka bilembo sima ya mikolo zomi na minei oyo malandi ntangu bakutanaki na mivrobi.  Pona yango, batu oyo bazali komonisa bilembo to batu oyo bazalaki pembeni ya moto oyo azalaki na bilembo basengeli kotiama na pembeni na loppoto ebengami 'isolement',  (yango elakisi ete mosika ya nzoto ya moto  mosusu) pona mikolo zomi na minei."
+
+    utter_answer_covid_masks_availability_lin:
+      - text: "Tuna na centre ya bokolongonu bwa nzoto nayo esika nini esengeli ozwa masque. Lata masque soki ozali kokusola  to kosala intchi.  soki ozali kolata masque, ezali motuya mingi oyeba lolenge malamu ya bosaleli mpe lolenge ya bobwaki yango malamu sima ya bosaleli."
+
+    utter_answer_covid_masks_care_lin:
+      - text: "- Na ntangu olati masque, tika kosimba yango, ntangu inso osimbi masque oyo baseleli sukola maboko malamu na yo na nkisi oyo epetolaka to na mayi na sabuni. - Ntangu masque elembi longola yango mpe kitanisa yango na masque mosusu ya sika, kosalela masque oyo ezali mpona esaleli lyoko mbala babale te.  - Pona kolongola masque : esengelli obenda yango na ndenge ya sima, (kosimba eteni yango ya liboso te), kobwaka yango na kitunga oyo elengelami pona kobwaka bosoto kasi oyo ezali na mufinuku, kosukola maboko na nkisi oyo epetolaka to na mayi na sabuni."
+
+    utter_answer_covid_masks_effectiveness_lin:
+      - text: "Ba masque epesaka kobatela ya lolenge moko mpe masungaka bopanzi ya microbi.   Lata masque soki ozali kokosola to kosala intchi.  Soki olati masque, ezali malamu mingi oyeba lolenge ya bosaleli yango malamu mpe ya bobwaki yango na ndenge elongobani. "
+
+    utter_answer_covid_masks_how_to_lin:
+      - text: "- Yambo ya kolata masque, sukola maboko na nkisi ya kopetola to na mayi na sabuni - Lata masque na lolenge oyo ekoki kozipa zolo na munoko mpe e vanda malamu na elongi na yo. - Ntangu ya bolati masque, kima kosimba yango, ntangu inso ozali kosimba masque oyo basaleli, sukola maboko mya yo na nkisi oyo epetolaka to na mayi na sabuni. - Ntangu masque elembi longola yango mpe kitanisa yango na masque mosusu ya sika, kosalela ba masque oyo ezali mpona esaleli lyoko mbala babale te. - Pona kolongola masque : esengelli obenda yango na ndenge ya sima, (kosimba eteni yango ya liboso te), kobwaka yango na kitunga oyo elengelami pona kobwaka    bosoto kasi oyo ezali na mufinuku, kosukola maboko na nkisi oyo epetolaka to na mayi na sabuni.    https://www.youtube.com/watch?v=KuT1KNfJIjc "
+
+    utter_answer_covid_risk_most_at_risk_lin:
+      - text: "Moto nyonso akoki kokweyisama makasi na COVID-19.  Mibange mpe bato oyo bazali na nkonkoso na maye matali bokolongo bwa nzoto na bango (tension, maladi ya motema to ya ba mpanzi, diabete to cancer) bazali na bato oyo bakoki komonisa bilembo ya mabe makasi soki bazwi bokono ena. kasi, moto yonso akoki kozwa coronavirus (COVID-19) mpe kokweyisama makasi na bokono yango."
+
+    utter_answer_covid_risk_for_children_lin:
+      - text: "Bana mpe bazali na keba keba ya kozwa microbi. Mibange mpe bato oyo bazali na nkonkoso na maye matali bokolongo bwa nzoto na bango (tension, maladi ya motema to ya ba mpanzi, diabete to cancer) bazali na bato oyo bakoki komonisa bilembo ya mabe makasi soki bazwi bokono ena. kasi, moto yonso akoki kozwa coronavirus (COVID-19) mpe kokweyisama makasi na bokono yango."
+
+    utter_answer_covid_risk_for_old_people_lin:
+      - text: "Mibange mpe bato oyo bazali na nkonkoso na maye matali bokolongo bwa nzoto na bango (tension, maladi ya motema to ya ba mpanzi, diabete to cancer) bazali na bato oyo bakoki komonisa bilembo ya mabe makasi soki bazwi bokono ena. kasi, moto yonso akoki kozwa coronavirus (COVID-19) mpe kokweyisama makasi na bokono yango."
+
+    utter_answer_covid_risk_with_preexisting_lin:
+      - text: "Bato oyo bazali na nkonkoso na maye matali bokolongo bwa nzoto na bango (tension, maladi ya motema to ya ba mpanzi, diabete to cancer) bazali na bato oyo bakoki komonisa bilembo ya mabe makasi soki bazwi bokono ena. kasi, moto yonso akoki kozwa coronavirus (COVID-19) mpe kokweyisama makasi na bokono yango."
+
+    utter_answer_covid_myth_alcohol_chlorine_lin:
+      - text: "Ko pomper alcool, chlore to ba nkisi misusu oyo epetolaka na nzoto nayo to kokotisa yango na kati ya nzoto ezali kobatela yo na coronavirus te (COVID-19) mpe makoki kozala mabe pona nzoto. Ba antibiotiki mazalaka eleko TE pona corona, ba antibiotiki ezalaka pona microbi misusu."
+
+    utter_answer_covid_myth_antibiotics_lin:
+      - text: "Ba antibiotiki mazalaka eleko TE pona corona, ba antibiotiki ezalaka pona microbi misusu."
+
+    utter_answer_covid_myth_cold_kills_lin:
+      - text: "Malili mpe Neige EKOKI TE koboma coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_drink_lin:
+      - text: "Komela, éthanol to ba nkisi misusu oyo epetolaka ESUNGAKA TE pona kobatela to kobikisa coronavirus (COVID-19) mpe ekoki kozala mabe makasi."
+
+    utter_answer_covid_myth_drink_alcohol_lin:
+      - text: "Komela alcool ebatelaka te na coronavirus (COVID-19)  mpe ekoki kozala mabe."
+
+    utter_answer_covid_myth_flies_lin:
+      - text: "Ezali na nkoma moko te to nsango oyo elingi kolakisa ete nzinzi akoki kopesa coronavirus (COVID-19).  virus epesamaka mingi penza na ba matanga oyo moto ya bokono azali kobimisa ntangu azali kokosola, kosala intchi to koloba."
+
+    utter_answer_covid_myth_fruits_lin:
+      - text: "Boleyi ba mbuma sukali oyo mazali kowuta na ba nzete ezali malamu pona nzoto, kasi ezali kobatela te mpe kobikisa te na corona (COVID)."
+
+    utter_answer_covid_myth_garlic_lin:
+      - text: "ail esalaka malamu na nzoto, kasi ezali na ELOKO MOKO TE oyo elakisi ete na épidémie ya mikolo oyo kolia ail ezali kobatela na coronavirus."
+
+    utter_answer_covid_myth_hand_dryers_lin:
+      - text: "Machini ya bokawusi maboko esungaka TE pona koboma coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_heat_kills_lin:
+      - text: "Coronavirus (COVID-19) EKOKI kopesama na bisika ya moyi makasi mpe ya malili.  Komitika onse ya moyi  makasi, EZALI KOPEKISA TE bozwi ya bokono ya coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_hold_breath_lin:
+      - text: "Kozala na makoki ya kokanga mpema pona ba secondi zomi to koleka kati na kozanga kokosola to mpe kozala na mikakatano ELINGI KOLOBA TE ete osili kozala musika ya bokono ya coronavirus (COVID-19) to ba makono misusu ya panzi."
+
+    utter_answer_covid_myth_hot_bath_lin:
+      - text: "Kosukola mayi ya moto ebatelaka te na coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_mosquitos_lin:
+      - text: "Le coronavirus (COVID-19) EKOKI TE kopesama na sima koswa ya ngungi. "
+
+    utter_answer_covid_myth_only_old_lin:
+      - text: "Bato ya ba mbula nyonso BAKOKI kozwa coronavirus (COVID-19). Mibange mpe bato oyo bazali na nkonkoso na maye matali bokolongo bwa nzoto (lokola maladie ya mpema asthme na lopoto, le diabète, maladie ya motema) bamonani lokola bato oyo bazangi makasi ya kobundisa coranavirus nayango bako monisa bilembo ya mabe makasi soki likama ya corona likomeli bango."
+
+    utter_answer_covid_myth_other_vaccines_lin:
+      - text: "Mangwele ya kosu-kosu ya mpema esungaka  TE pona kobatela na coronavirus."
+
+    utter_answer_covid_myth_phone_signals_lin:
+      - text: "Virus etambolaka te na nzela ya radio to ya ba reseaux ya alo alo."
+
+    utter_answer_covid_myth_saline_rinse_lin:
+      - text: "Eloko moko te elakisi ete kosukola zolo na serumi ezali kobatela bato na kozwa coronavirus (COVID-19). "
+
+    utter_answer_covid_myth_spices_lin:
+      - text: "Kobakisa pili pili kati ya soupou to na bilei misusu ezali kosunge TE pona kobatela to kobikisa coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_steam_lin:
+      - text: "Kobenda mulinga to mulunge ya moto ebikisaka TE mpe epekisaka coranavirus (COVID-19) te. kobenda mulunge to mulinga ya moto na nzela ya pema ezali mabe."
+
+    utter_answer_covid_myth_thermal_scanners_lin:
+      - text: "Ba machini ya kotalisa moto ya nzoto na musika (thermometre a distance) MAKOKI kotalisa soki moto azali na fièvre, kasi MAKOKI TE kotalisa soki moto asili kozwa to te coronavirus (COVID-19)."
+
+    utter_answer_covid_myth_traditional_medicine_lin:
+      - text: "Ezali na lolenge moko te ya kosalilsa to yako sukisa bopanzi ya coronvirus na bokoko.  lolenge oyo eleki malamu pona komibatela ezali kolanda malako ya komibatela, bizaleli oyo babengi na lopoto gestes barrières mpe koyebisa na ebandeli soki bilembo emonisami."
+
+    utter_answer_covid_myth_UV_lin:
+      - text: "Muinda ultraviolette ESENGELI TE kosalela yango pona kopetola mpe yango ekoki komema mikakatano na loposo."
+
+    utter_answer_covid_myths_summary_lin:
+      - text: "Tala maye mazali kosalema: - Ebele ya bato oyo bazali na coronavirus bakoki kobika mpe kolongola virus na nzoto na bango. - Bato misusu bakoki komonisa bilembo ya makasi ya bokono, lokola bokono ya mpema.  Bato misusu, ata bazali bazwami na microbi, ba monisaka kaka bilembo ya mikie. - Bato ya ba mbula nyonso BAKOKI kozwa bokono ya coronavirus.  Mibange mpe bato oyo bazali na nkokoso nam mayematali bokolongo bwa nzoto na bango (lokola bokono ya mpema asthme, diabete, bokono ya motema) bazali komonana lokola bazali na makasi ya kobundisa bokono te mpe bakoki kobela makasi soki bazwi virus. -Na mokolo ya lelo, nkisi MOKO te ezali oyo basengi na bato komela pona komibatela to komisalisa na coronavirus.  Ebele ya bakoni bazali kobika na sima ya kosalisama na ba minganga.  -Komela méthanol,éthanol to ba nkisi misusu oyo epetolaka ekopekisa TE to kobikisa te coronavirus mppe ekoki kozala mabe makasi pona nzoto.   Tala makambu mazali koleka na site Web ya OMS: https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters "
+
+    utter_answer_covid_on_surfaces_lin:
+      - text: "Toyebi te penza ngonga boni virus oyo ezali komema coronavirus (COVID-19) evandaka na bisika ya polele, kasi ezali lokolo kokokana na ba coronavirus misusu.  Bayi kelassi balobi ete coronavirus (na ba nsango oyo ya libandeli na maye matali virus COVID-19) ekoki kovanda na bisika ya polele pona mwa ba ngonga ebele to pe mikolo ebele.  Yango ezali kokesena na lolenge b iska yango mazali (ndakisa, bisika, nini mazali nzinganzinga moyi to malili).  Soki okanisi ete esika moko ekoki kozaLa na microbi ena, sukola yango na nkisi oyo epetolaka pona koboma virus, pona komibatela mpe kobatela basusu."
+
+    utter_answer_covid_protection_lin:
+      - text: "- Sukola maboko mayo ntangu inso (mukie pona ba secondi ntúkú míbalé) na nkisi oyo esalami na alcool to sukola maboko na mayi na sabuni. - Tikala musika ya ata metre moko na moto nyonso oyo azali kokosola to kosala intchi. - Keba na kosimba misu, munoko mpe zolo mya yo - Zipa monoko nayo na moluku (coude) na yo ya kongumbama (plie) to muswalo (mouchoir) na ntangu ozali kokosola to pe ozali kosala intchi.  bwaka na lobango muswalo to pe kintendi oyo osaleli na kitunga ya bosoto oyo ezali na ezipeli. - Fanda na ndako soki ozali koyoka nzoto malamu te.  soki ozali na fièvre (nzoto moto), kosu kosu mpe mikakatno na kompema, luka munganga."
+
+    utter_answer_covid_protection_wash_hands_lin:
+      - text: "- Sukola maboko mya yo ntangu inso (moke pona ngonga ya secondi ntúkú míbalé) na nkisi oyo esalemi na lacool to sukola maboko nayo na mayi mpe sabuni.  pamba te yango nde ebomaka virus oyo ekoki ozala ontei mya maboko mya yo.  https://apps.who.int/iris/bitstream/handle/10665/331922/WHO-2019-nCoV-IPC_WASH-2020.3-fre.pdf "
+
+    utter_answer_covid_protection_keep_distance_lin:
+      - text: "Tikala musika ya ata metre moko na moto nyonso oyo azali kokosola to kosala intchi, Azali kopanza matanga ya mikie na zolo to na munoko oyo makoki kozala na virus.  Keba kosimba misu, zolo mpe munoko na yo.  Maboko esikambaka bisika ebele mpe makoki kopesa virus na nzoto nayo na ntangu ya bosimbi misu, zolo to munoko na yo. "
+
+    utter_answer_covid_protection_cover_mouth_nose_lin:
+      - text: "- Zipa monoko nayo na moluku (coude) na yo ya kongumbama (plie) to muswalo (mouchoir) na ntangu ozali kokosola to pe ozali kosala intchi.  bwaka na lobango muswalo to pe kintendi oyo osaleli na kitunga ya bosoto oyo ezali na ezipeli.  Matanga oyo mabimaka na ntangu ya bosali intchi to bokosoli makoki kopanza virus."
+
+    utter_answer_covid_protection_stay_at_home_lin:
+      - text: "- Fanda na ndako soki ozali koyoka nzoto malamu te.  soki ozali na fièvre (nzoto moto), kosu kosu mpe mikakatno na kompema, luka munganga kasi benga yambo ya kokende. landa malako ya mokonzi oyo atalaka makambo ya bokolongonu bwa nzoto na bisika ozali."
+
+    utter_answer_covid_SARS_lin:
+      - text: "Bilembo mya bolakisi ete mikakatano ya bopemi mazali makasi mazali kowuta na libota moko ya virus ya coronavirus ya lelo (COVID-19) mpe bango babale bakoki komema pasi ya kopema, (bokono ya pema).  Kasi, bazali makono makeseni.  bokono ya mpema ya lolenge ya libos emonisami lisusu te uta mbula nkóto mibale na misato na mokili."
+
+    utter_answer_covid_stay_at_home_lin:
+      - text: "Soki mbulamatari asengi na yo ovanda na bisika ya yo moko, mibatela mpe vanda na ndako.  ata soki oza na nzoto kolongonu.  Bima kaka pona kokokisa ba mposa oyo mazali na motuya pona libota na yo, fanda na ndaku pona mikolo zomi na minei."
+
+    utter_answer_covid_stress_lin:
+      - text: "Ezali likambo ya mabe te koyka mawa, komitungisama, kobungisa mayela, kobanga to pe kozala na kanda ntangu ya crise. Okoki kozwa makasi na sima ya kosolla na batu oyo ondimelaka.  Sololaka na ba ninga na yo mpe baye ya libota nayo.  Soki esengeli ovanda epayi nayo, nbatela lolenge malamu ya kozala, oyo elingi koloba lokola lolelenge ya kolia, mpongi, mwa physique mpona nzoto mpe masolo ya esenge na baye bazali pembeni nayo na ndako to na nzela ya internet to pe alo alo na baye bazali musika.  Koluka te koboma mitungis nayo na makaya, na momeli masanga to ba drogue misusu. Soki omoni lokola makambu mazali kolekela yo, solola yango na ba minganga to pe baye ba pesaka toli ya maye matali bokolongo bwa nzoto.  Zala ya kobongama mpe yeba bisika ya kokende mpe lolenge nini kosenga lisungi soki likama esili koyingela.  Luka oyeba.  Zwa ba nsango oyo makoki kosunga yo nakoyeba bokebi oyo esengeli ozala na yango mpe maye mazali koleka bisika ozwami.  luka ba nsango na bisika oyo esengeli, lokola na site internet ya OMS to bisika ya misala mya ekolo ya maye matali bokolongo bwa nzoto."
+
+    utter_answer_covid_symptoms_lin:
+      - text: "Bilembo oyo emonisaka mingi na coronavirus (COVID-19) mazali fièvre, kosu kosu ekawuka, mpe bolembu ya nzoto.  bilembo misusu maye mazalaka mingi penza te kasi makoki komonisama epayi ya bato misusu, lokola pasi na bisika mikiwa engumbamaka, zolo kongama, mutu pasi, appolo na misu, mungongo pasi, pulu pulu, kobungisa makasi ya koyoka solo to pe komeka bilei, kolokoto (maladi ya loposo) misapi ymya maboko mpe mya makolo kobungisa langi. Batu misusu bakoki kominisa ba lolenge ya bokonCertaineo ya makasi koleka, lokola bokono ya mpema, Batu misusu, ata soki bazwi microbi, bamonisaka penza bilembo ya makasi te. https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses "
+
+    utter_answer_covid_travel_advice_lin:
+      - text: "Toli na lolenge ya molayi pona baye nyonso oyo bazali kosala mobembo basosola:  -Sukola maboko na yo ntangu inso  -Keba kosimba zolo, munoko mpe misu na yo -Zipa munoko mpe zolo nayo na moluku (coude) nayo ya kongumbama to mpe na muswalo ntangu ozali kokosola to kosala intchi, -Zala musika ya koleka metre moko na moto ya bokono    Baye bawuti mobembo na bisika oyo bokono ezwami basengeli :  -Kotalela bilembo sima mikolo zomi na minei mpe kolandela mibeko mya ekolo na maye matali bokono. -Soki bilembo  maye mamonisami lokola fièvre, kosu kosu, mpasi na bopemi, esengeli na boto bazali kosala to bawuti  mobembo kobenga minganga ya mboka, nzela ya alo alo nde malamu, mpe koyebisa bango na ntina ya bilembo mpe makambo bakutani na yango na mobembo na bango. "
+
+    utter_answer_covid_treatments_lin:
+      - text: "Na mokolo ya lelo, ezali na mangwele moko te mpe nkisi moko te pona kobatela to kobikisa na coronavirus (COVID-2019). Ba mangwele mpe ba nkisi ya kobikisi mazali kolengelama nayino mpe mazali nanu na ngonga ya komekama (test). Komipesa ba nkisi te lokola ba antibiotiki. Na yango, bato oyo bazwami na mbeba ya bokono basengeli kozwa lisungi ya munganga pona kokitisa mpasi oyo ezali kowuta na bilembo ya bonkono. batu oyo bazali kobela makasi mpenza basengeli kokota lopitalo. Ebele ya bakoni babikaka sima ya lisungi oyo ezali kopesama na minganga. Tokoki kobika na bokono ya coronavirus (COVID-19). https://apps.who.int/iris/bitstream/handle/10665/332437/WHO-2019-nCoV-clinical-2020.5-fre.pdf "
+
+    utter_answer_covid_wash_hands_frequency_lin:
+      - text: "Sukola maboko nayo ntangu inso na nkisi oyo ezalai na alcool to na mayi mpe sabuni."
+
+    utter_answer_covid_wash_hands_how_lin:
+      - text: "Sukola maboko na mayi ya peto na nkisi oyo ezali na alcool mpe sabuni sala pona ngonga ya mukie ba secondi ntuku mibale (20 secondes) soki ozali na mayi mpe sabuni te bisika ozali, salela nkisi oyo eptolaka maboko (gel desinfectant)."
+
+    utter_answer_covid_what_is_corona_covid-19_lin:
+      - text: "Ba coronavirus bazali libota munene ya ba virus oyo bakoki kobenda makono epayi ya ba nyama to bato.  Epayi ya bato, ba coronavirus ebele mayebani pona komema bokono ya mpema ko uta na miyoyo ti na bokono ya mabe makasi.  Coronavirus oyo emonani mikolo oyo ezali komema bokono ya coronavirus (COVID-19). COVID-19 ezali bokono oyo ezali kopesama na coronavirus oyo emonani mikolo miwuti koleka awa. https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses  "
+
+    utter_answer_covid_why_distancing_lin:
+      - text: "Zala musika moke ya metre moko na moto nyonso oyo azali kokosola to kosala intchi.  soki moto azali kolekisa matanga ya mikie na zolo to munoko ekoki kozala na virus.  kima kosimba misu, zolo mpe munoko na yo.  Maboko masimbaka biskia ebele mpe bakoki kopesa ba virus na nzoto nayo ntangu ozali kosimba misu, munoko to munoko nayo."
 
 session_config:
   session_expiration_time: 60
